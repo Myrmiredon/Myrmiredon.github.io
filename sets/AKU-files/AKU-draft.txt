@@ -1,0 +1,3402 @@
+﻿[CustomCards]
+	[
+		{
+			"name": "Bisapient Rift",
+			"rarity": "uncommon",
+			"mana_cost": "{U}{R}",
+			"type": "Enchantment",
+			"collector_number": "222",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/222_Bisapient Rift.png"
+			}
+		},
+		{
+			"name": "Property Auctioneer",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}{G}",
+			"type": "Creature — Snake Hag ",
+			"collector_number": "238",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/238_Property Auctioneer.png"
+			}
+		},
+		{
+			"name": "Settlement's Birth",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}{U}",
+			"type": "Enchantment",
+			"collector_number": "242",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/242_Settlement's Birth.png"
+			}
+		},
+		{
+			"name": "Urdonic Tithe Taker",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}{R}",
+			"type": "Creature — Dragon Minion ",
+			"collector_number": "247",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/247_Urdonic Tithe Taker.png"
+			}
+		},
+		{
+			"name": "Radicalised Revenant",
+			"rarity": "uncommon",
+			"mana_cost": "{U}{B}",
+			"type": "Creature — Human Spirit Rogue ",
+			"collector_number": "240",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/240_Radicalised Revenant.png"
+			}
+		},
+		{
+			"name": "Ithian Emissaries",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}{U}",
+			"type": "Creature — Lizard Advisor ",
+			"collector_number": "230",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/230_Ithian Emissaries.png"
+			}
+		},
+		{
+			"name": "Scion of the Call",
+			"rarity": "uncommon",
+			"mana_cost": "{R}{G}",
+			"type": "Creature — Efreet Druid ",
+			"collector_number": "241",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/241_Scion of the Call.png"
+			}
+		},
+		{
+			"name": "Lycanopractor",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}{W}",
+			"type": "Creature — Human Citizen ",
+			"collector_number": "234",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/234_Lycanopractor.png"
+			}
+		},
+		{
+			"name": "Species Representative",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{G}{W}",
+			"type": "Creature — Cat Plant Advisor ",
+			"collector_number": "245",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/245_Species Representative.png"
+			}
+		},
+		{
+			"name": "Ambassador of Svakarataja",
+			"rarity": "uncommon",
+			"mana_cost": "{W}{B}",
+			"type": "Creature — Hex Advisor ",
+			"collector_number": "219",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/219_Ambassador of Svakarataja.png"
+			}
+		},
+		{
+			"name": "Crumbling Crib",
+			"rarity": "common",
+			"mana_cost": "{2}",
+			"type": "Artifact Creature — Building Zombie ",
+			"collector_number": "251",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/251_Crumbling Crib.png"
+			}
+		},
+		{
+			"name": "Impervious Walls",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Instant",
+			"collector_number": "16",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/16_Impervious Walls.png"
+			}
+		},
+		{
+			"name": "Aspect of Community",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Enchantment",
+			"collector_number": "1",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/1_Aspect of Community.png"
+			}
+		},
+		{
+			"name": "Pious Coinscale",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Hex Cleric ",
+			"collector_number": "29",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/29_Pious Coinscale.png"
+			}
+		},
+		{
+			"name": "Den Builder",
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+			"type": "Creature — Cat Artificer ",
+			"collector_number": "6",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/6_Den Builder.png"
+			}
+		},
+		{
+			"name": "Spireline Warden",
+			"rarity": "common",
+			"mana_cost": "{4}{W}",
+			"type": "Creature — Griffin Soldier ",
+			"collector_number": "39",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/39_Spireline Warden.png"
+			}
+		},
+		{
+			"name": "Ithian Snowstorm",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Instant",
+			"collector_number": "20",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/20_Ithian Snowstorm.png"
+			}
+		},
+		{
+			"name": "Passive-Aggressive Door",
+			"rarity": "common",
+			"mana_cost": "{W}",
+			"type": "Artifact Creature — Construct Rogue ",
+			"collector_number": "27",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/27_Passive-Aggressive Door.png"
+			}
+		},
+		{
+			"name": "Shining Hospital",
+			"rarity": "common",
+			"mana_cost": "{W}",
+			"type": "Artifact — Building ",
+			"collector_number": "37",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/37_Shining Hospital.png"
+			}
+		},
+		{
+			"name": "Imprisonment",
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+			"type": "Enchantment — Aura ",
+			"collector_number": "17",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/17_Imprisonment.png"
+			}
+		},
+		{
+			"name": "Hold Accountable",
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+			"type": "Instant ",
+			"collector_number": "15",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/15_Hold Accountable.png"
+			}
+		},
+		{
+			"name": "Badge of Office",
+			"rarity": "uncommon",
+			"mana_cost": "{W}",
+			"type": "Artifact — Equipment ",
+			"collector_number": "2",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/2_Badge of Office.png"
+			}
+		},
+		{
+			"name": "Nature Reserve",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Enchantment",
+			"collector_number": "24",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/24_Nature Reserve.png"
+			}
+		},
+		{
+			"name": "Canal Skater",
+			"rarity": "common",
+			"mana_cost": "{4}{W}",
+			"type": "Creature — Fish Citizen ",
+			"collector_number": "5",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/5_Canal Skater.png"
+			}
+		},
+		{
+			"name": "Mother of Notions",
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+			"type": "Creature — Human Artist ",
+			"collector_number": "23",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/23_Mother of Notions.png"
+			}
+		},
+		{
+			"name": "Thought Leader",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Spirit Zombie ",
+			"collector_number": "41",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/41_Thought Leader.png"
+			}
+		},
+		{
+			"name": "Bastion of Morality",
+			"rarity": "common",
+			"mana_cost": "{3}{B}",
+			"type": "Creature — Hex Knight ",
+			"collector_number": "89",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/89_Bastion of Morality.png"
+			}
+		},
+		{
+			"name": "Ithian Sentry",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Lizard Warrior ",
+			"collector_number": "19",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/19_Ithian Sentry.png"
+			}
+		},
+		{
+			"name": "Benevolent Farmhand",
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+			"type": "Creature — Bird Citizen ",
+			"collector_number": "3",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/3_Benevolent Farmhand.png"
+			}
+		},
+		{
+			"name": "Dusk Sentinel",
+			"rarity": "common",
+			"mana_cost": "{3}{W}",
+			"type": "Creature — Human Werewolf Scout ",
+			"collector_number": "8",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Myrmiredon.github.io/sets/AKU-files/img/8_Dusk Sentinel_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/8_Dusk Sentinel_front.png"
+			}
+		},
+		{
+			"name": "Vratan Philanthropist",
+			"rarity": "common",
+			"mana_cost": "{2}{B}",
+			"type": "Creature — Human Assassin ",
+			"collector_number": "125",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/125_Vratan Philanthropist.png"
+			}
+		},
+		{
+			"name": "Percival's Vanguard",
+			"rarity": "common",
+			"mana_cost": "{2}{B}",
+			"type": "Creature — Human Zombie Knight ",
+			"collector_number": "116",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/116_Percival's Vanguard.png"
+			}
+		},
+		{
+			"name": "Blighted Feast",
+			"rarity": "common",
+			"mana_cost": "{B}",
+			"type": "Sorcery",
+			"collector_number": "91",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/91_Blighted Feast.png"
+			}
+		},
+		{
+			"name": "Collect Tax",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Instant",
+			"collector_number": "93",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/93_Collect Tax.png"
+			}
+		},
+		{
+			"name": "Aspect of Poverty",
+			"rarity": "common",
+			"mana_cost": "{3}{B}",
+			"type": "Enchantment",
+			"collector_number": "88",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/88_Aspect of Poverty.png"
+			}
+		},
+		{
+			"name": "Old Guard Fanatic",
+			"rarity": "common",
+			"mana_cost": "{B}",
+			"type": "Creature — Human Zombie Citizen ",
+			"collector_number": "110",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/110_Old Guard Fanatic.png"
+			}
+		},
+		{
+			"name": "Intensive Labor",
+			"rarity": "common",
+			"mana_cost": "{2}{B}",
+			"type": "Sorcery",
+			"collector_number": "109",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/109_Intensive Labor.png"
+			}
+		},
+		{
+			"name": "Donation Taker",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Human Citizen ",
+			"collector_number": "98",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/98_Donation Taker.png"
+			}
+		},
+		{
+			"name": "Consume Host",
+			"rarity": "common",
+			"mana_cost": "{B}",
+			"type": "Instant",
+			"collector_number": "94",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/94_Consume Host.png"
+			}
+		},
+		{
+			"name": "Bones to Bricks",
+			"rarity": "common",
+			"mana_cost": "{4}{B}",
+			"type": "Instant",
+			"collector_number": "92",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/92_Bones to Bricks.png"
+			}
+		},
+		{
+			"name": "Host Farm Shepherd",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Hex Cleric ",
+			"collector_number": "108",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/108_Host Farm Shepherd.png"
+			}
+		},
+		{
+			"name": "Dead Weight",
+			"rarity": "common",
+			"mana_cost": "{B}",
+			"type": "Enchantment — Aura ",
+			"collector_number": "96",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/96_Dead Weight.png"
+			}
+		},
+		{
+			"name": "Vratan Dockhand",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Human Citizen ",
+			"collector_number": "124",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/124_Vratan Dockhand.png"
+			}
+		},
+		{
+			"name": "Host Farm Escapee",
+			"rarity": "common",
+			"mana_cost": "{4}{B}",
+			"type": "Creature — Human Survivor ",
+			"collector_number": "107",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/107_Host Farm Escapee.png"
+			}
+		},
+		{
+			"name": "Unsafe Workplace",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}",
+			"type": "Instant",
+			"collector_number": "122",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/122_Unsafe Workplace.png"
+			}
+		},
+		{
+			"name": "Host Farm Entertainer",
+			"rarity": "common",
+			"mana_cost": "{3}{B}",
+			"type": "Creature — Eye Citizen ",
+			"collector_number": "106",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/106_Host Farm Entertainer.png"
+			}
+		},
+		{
+			"name": "Sarajex Veteran",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Human Soldier ",
+			"collector_number": "161",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/161_Sarajex Veteran.png"
+			}
+		},
+		{
+			"name": "Spawn of Svakarataja",
+			"rarity": "common",
+			"mana_cost": "{2}{R}",
+			"type": "Creature — Worm Rogue ",
+			"collector_number": "164",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/164_Spawn of Svakarataja.png"
+			}
+		},
+		{
+			"name": "Aspect of Commerce",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Enchantment",
+			"collector_number": "129",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/129_Aspect of Commerce.png"
+			}
+		},
+		{
+			"name": "Raging Recruiter",
+			"rarity": "common",
+			"mana_cost": "{3}{R}",
+			"type": "Creature — Human Warrior ",
+			"collector_number": "158",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/158_Raging Recruiter.png"
+			}
+		},
+		{
+			"name": "Omnisonder's Flow",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}",
+			"type": "Instant",
+			"collector_number": "154",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/154_Omnisonder's Flow.png"
+			}
+		},
+		{
+			"name": "Thoughtglass Amulet",
+			"rarity": "common",
+			"mana_cost": "{R}",
+			"type": "Artifact — Equipment ",
+			"collector_number": "167",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/167_Thoughtglass Amulet.png"
+			}
+		},
+		{
+			"name": "Toddler Tantrum",
+			"rarity": "common",
+			"mana_cost": "{2}{R}",
+			"type": "Instant",
+			"collector_number": "168",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/168_Toddler Tantrum.png"
+			}
+		},
+		{
+			"name": "Wrangle",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Sorcery",
+			"collector_number": "170",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/170_Wrangle.png"
+			}
+		},
+		{
+			"name": "Imposing Gateway",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Enchantment",
+			"collector_number": "143",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/143_Imposing Gateway.png"
+			}
+		},
+		{
+			"name": "Highlands Retriver",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Orc Werewolf Warrior ",
+			"collector_number": "142",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Myrmiredon.github.io/sets/AKU-files/img/142_Highlands Retriver_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/142_Highlands Retriver_front.png"
+			}
+		},
+		{
+			"name": "Rowdy Protest",
+			"rarity": "common",
+			"mana_cost": "{2}{R}",
+			"type": "Sorcery",
+			"collector_number": "160",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/160_Rowdy Protest.png"
+			}
+		},
+		{
+			"name": "Fiesty Yearling",
+			"rarity": "uncommon",
+			"mana_cost": "{R}",
+			"type": "Creature — Minotaur Citizen ",
+			"collector_number": "139",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/139_Fiesty Yearling.png"
+			}
+		},
+		{
+			"name": "Infectious Strike",
+			"rarity": "common",
+			"mana_cost": "{R}",
+			"type": "Instant",
+			"collector_number": "145",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/145_Infectious Strike.png"
+			}
+		},
+		{
+			"name": "Call Thunder",
+			"rarity": "common",
+			"mana_cost": "{R}",
+			"type": "Sorcery",
+			"collector_number": "132",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/132_Call Thunder.png"
+			}
+		},
+		{
+			"name": "Dominated Vassal",
+			"rarity": "common",
+			"mana_cost": "{2}{R}",
+			"type": "Creature — Lizard Werewolf Serf ",
+			"collector_number": "136",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Myrmiredon.github.io/sets/AKU-files/img/136_Dominated Vassal_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/136_Dominated Vassal_front.png"
+			}
+		},
+		{
+			"name": "Gigantoform Protector",
+			"rarity": "common",
+			"mana_cost": "{4}{R}",
+			"type": "Creature — Cat Nomad ",
+			"collector_number": "141",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/141_Gigantoform Protector.png"
+			}
+		},
+		{
+			"name": "Odajex Beastmaster",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Human Shaman ",
+			"collector_number": "152",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/152_Odajex Beastmaster.png"
+			}
+		},
+		{
+			"name": "Vratan Settlers",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Viashino Druid ",
+			"collector_number": "215",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/215_Vratan Settlers.png"
+			}
+		},
+		{
+			"name": "Scrounging Thallid",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Fungus Warrior ",
+			"collector_number": "208",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/208_Scrounging Thallid.png"
+			}
+		},
+		{
+			"name": "Hamletback Turtle",
+			"rarity": "common",
+			"mana_cost": "{3}{G}",
+			"type": "Creature — Turtle Artificer ",
+			"collector_number": "192",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/192_Hamletback Turtle.png"
+			}
+		},
+		{
+			"name": "Grassclade Defender",
+			"rarity": "common",
+			"mana_cost": "{3}{G}",
+			"type": "Creature — Plant Saproling Archer ",
+			"collector_number": "191",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/191_Grassclade Defender.png"
+			}
+		},
+		{
+			"name": "Hazenwyld Envoy",
+			"rarity": "common",
+			"mana_cost": "{2}{G}",
+			"type": "Creature — Goat Peasant ",
+			"collector_number": "193",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/193_Hazenwyld Envoy.png"
+			}
+		},
+		{
+			"name": "City-Razer",
+			"rarity": "common",
+			"mana_cost": "{4}{G}",
+			"type": "Creature — Beast Berserker ",
+			"collector_number": "178",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/178_City-Razer.png"
+			}
+		},
+		{
+			"name": "Into the Crowd",
+			"rarity": "common",
+			"mana_cost": "{G}",
+			"type": "Instant",
+			"collector_number": "200",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/200_Into the Crowd.png"
+			}
+		},
+		{
+			"name": "Disgraced Urdon",
+			"rarity": "common",
+			"mana_cost": "{6}{G}",
+			"type": "Creature — Wurm Citizen ",
+			"collector_number": "180",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/180_Disgraced Urdon.png"
+			}
+		},
+		{
+			"name": "Newborn Home",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Instant",
+			"collector_number": "203",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/203_Newborn Home.png"
+			}
+		},
+		{
+			"name": "Giant Growth",
+			"rarity": "common",
+			"mana_cost": "{G}",
+			"type": "Instant",
+			"collector_number": "186",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/186_Giant Growth.png"
+			}
+		},
+		{
+			"name": "Aspect of Harmony",
+			"rarity": "common",
+			"mana_cost": "{G}",
+			"type": "Enchantment",
+			"collector_number": "174",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/174_Aspect of Harmony.png"
+			}
+		},
+		{
+			"name": "Rapid Construction",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Instant",
+			"collector_number": "159",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/159_Rapid Construction.png"
+			}
+		},
+		{
+			"name": "Urban Development",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Enchantment — Aura ",
+			"collector_number": "213",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/213_Urban Development.png"
+			}
+		},
+		{
+			"name": "Gigant's Favor",
+			"rarity": "common",
+			"mana_cost": "{2}{G}",
+			"type": "Instant",
+			"collector_number": "188",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/188_Gigant's Favor.png"
+			}
+		},
+		{
+			"name": "Sarajex Emissary",
+			"rarity": "common",
+			"mana_cost": "{2}{G}",
+			"type": "Creature — Human Advisor ",
+			"collector_number": "206",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/206_Sarajex Emissary.png"
+			}
+		},
+		{
+			"name": "Gigant's Wrath",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Instant",
+			"collector_number": "189",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/189_Gigant's Wrath.png"
+			}
+		},
+		{
+			"name": "Highway Hitchhiker",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Human Werewolf Serf ",
+			"collector_number": "197",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Myrmiredon.github.io/sets/AKU-files/img/197_Highway Hitchhiker_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/197_Highway Hitchhiker_front.png"
+			}
+		},
+		{
+			"name": "Hazenwyld Godbeast",
+			"rarity": "common",
+			"mana_cost": "{4}{G}",
+			"type": "Creature — Aurochs Druid ",
+			"collector_number": "194",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/194_Hazenwyld Godbeast.png"
+			}
+		},
+		{
+			"name": "Integrate into Society",
+			"rarity": "common",
+			"mana_cost": "{2}{G}",
+			"type": "Sorcery",
+			"collector_number": "199",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/199_Integrate into Society.png"
+			}
+		},
+		{
+			"name": "Vratan Explorer",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Creature — Crab Ranger ",
+			"collector_number": "84",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/84_Vratan Explorer.png"
+			}
+		},
+		{
+			"name": "Hand of Percival",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Creature — Human Rogue ",
+			"collector_number": "54",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/54_Hand of Percival.png"
+			}
+		},
+		{
+			"name": "Cephalopticon",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Creature — Octopus Citizen ",
+			"collector_number": "47",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/47_Cephalopticon.png"
+			}
+		},
+		{
+			"name": "Chilling Effect",
+			"rarity": "common",
+			"mana_cost": "{U}",
+			"type": "Enchantment",
+			"collector_number": "48",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/48_Chilling Effect.png"
+			}
+		},
+		{
+			"name": "Percival's Strategist",
+			"rarity": "common",
+			"mana_cost": "{2}{U}",
+			"type": "Creature — Human Advisor ",
+			"collector_number": "71",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/71_Percival's Strategist.png"
+			}
+		},
+		{
+			"name": "Vratan Portraitist",
+			"rarity": "common",
+			"mana_cost": "{3}{U}",
+			"type": "Creature — Human Artist ",
+			"collector_number": "85",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/85_Vratan Portraitist.png"
+			}
+		},
+		{
+			"name": "Ithian Clairvoyant",
+			"rarity": "common",
+			"mana_cost": "{3}{U}",
+			"type": "Creature — Elemental Monk ",
+			"collector_number": "57",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/57_Ithian Clairvoyant.png"
+			}
+		},
+		{
+			"name": "Highlands Warden",
+			"rarity": "common",
+			"mana_cost": "{4}{U}",
+			"type": "Creature — Bird Wizard ",
+			"collector_number": "55",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/55_Highlands Warden.png"
+			}
+		},
+		{
+			"name": "Ithian Reaver",
+			"rarity": "common",
+			"mana_cost": "{5}{U}",
+			"type": "Creature — Bird Horror Wizard ",
+			"collector_number": "60",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/60_Ithian Reaver.png"
+			}
+		},
+		{
+			"name": "Odajex Artificer",
+			"rarity": "common",
+			"mana_cost": "{U}",
+			"type": "Creature — Human Artificer ",
+			"collector_number": "66",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/66_Odajex Artificer.png"
+			}
+		},
+		{
+			"name": "Soften",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Instant",
+			"collector_number": "78",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/78_Soften.png"
+			}
+		},
+		{
+			"name": "Take Back Control",
+			"rarity": "common",
+			"mana_cost": "{1}{U}{U}",
+			"type": "Instant",
+			"collector_number": "81",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/81_Take Back Control.png"
+			}
+		},
+		{
+			"name": "Narcoleptic Transformation",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Enchantment — Aura ",
+			"collector_number": "65",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/65_Narcoleptic Transformation.png"
+			}
+		},
+		{
+			"name": "Aspect of Innovation",
+			"rarity": "common",
+			"mana_cost": "{2}{U}",
+			"type": "Enchantment",
+			"collector_number": "46",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/46_Aspect of Innovation.png"
+			}
+		},
+		{
+			"name": "Ponder the Omnisonder",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Instant",
+			"collector_number": "76",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/76_Ponder the Omnisonder.png"
+			}
+		},
+		{
+			"name": "Skyhigh Scaffolds",
+			"rarity": "common",
+			"mana_cost": "{U}",
+			"type": "Instant",
+			"collector_number": "77",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/77_Skyhigh Scaffolds.png"
+			}
+		},
+		{
+			"name": "Planning Permission",
+			"rarity": "common",
+			"mana_cost": "{4}{U}",
+			"type": "Sorcery",
+			"collector_number": "74",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/74_Planning Permission.png"
+			}
+		},
+		{
+			"name": "Town Hall",
+			"rarity": "common",
+			"mana_cost": "{G}",
+			"type": "Artifact — Building ",
+			"collector_number": "211",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/211_Town Hall.png"
+			}
+		},
+		{
+			"name": "Grammar School",
+			"rarity": "common",
+			"mana_cost": "{U}",
+			"type": "Artifact — Building ",
+			"collector_number": "52",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/52_Grammar School.png"
+			}
+		},
+		{
+			"name": "War Memorial",
+			"rarity": "common",
+			"mana_cost": "{B}",
+			"type": "Artifact — Building ",
+			"collector_number": "128",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/128_War Memorial.png"
+			}
+		},
+		{
+			"name": "Emergency Club",
+			"rarity": "common",
+			"mana_cost": "{2}",
+			"type": "Artifact — Building Equipment ",
+			"collector_number": "252",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/252_Emergency Club.png"
+			}
+		},
+		{
+			"name": "Bleak Jail",
+			"rarity": "common",
+			"mana_cost": "{2}",
+			"type": "Artifact — Building ",
+			"collector_number": "248",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/248_Bleak Jail.png"
+			}
+		},
+		{
+			"name": "Roadside Tavern",
+			"rarity": "common",
+			"mana_cost": "{3}",
+			"type": "Artifact — Building ",
+			"collector_number": "258",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/258_Roadside Tavern.png"
+			}
+		},
+		{
+			"name": "Market Stall",
+			"rarity": "common",
+			"mana_cost": "{R}",
+			"type": "Artifact — Building ",
+			"collector_number": "149",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/149_Market Stall.png"
+			}
+		},
+		{
+			"name": "Monastery Warden",
+			"rarity": "common",
+			"mana_cost": "{4}",
+			"type": "Artifact Creature — Building Gargoyle ",
+			"collector_number": "256",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/256_Monastery Warden.png"
+			}
+		},
+		{
+			"name": "City Center",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "260",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/260_City Center.png"
+			}
+		},
+		{
+			"name": "Pernicious Scheme",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Instant",
+			"collector_number": "72",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/72_Pernicious Scheme.png"
+			}
+		},
+		{
+			"name": "Endless Vassals",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}{B}",
+			"type": "Sorcery",
+			"collector_number": "100",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/100_Endless Vassals.png"
+			}
+		},
+		{
+			"name": "Thoughtlich's Phylactery",
+			"rarity": "rare",
+			"mana_cost": "{1}{B}",
+			"type": "Artifact",
+			"collector_number": "120",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Myrmiredon.github.io/sets/AKU-files/img/120_Thoughtlich's Phylactery_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/120_Thoughtlich's Phylactery_front.png"
+			}
+		},
+		{
+			"name": "Odajex Thrall",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}{U}",
+			"type": "Creature — Human Werewolf Serf ",
+			"collector_number": "69",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Myrmiredon.github.io/sets/AKU-files/img/69_Odajex Thrall_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/69_Odajex Thrall_front.png"
+			}
+		},
+		{
+			"name": "Percithan Farmhand",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Human Werewolf Citizen ",
+			"collector_number": "28",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Myrmiredon.github.io/sets/AKU-files/img/28_Percithan Farmhand_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/28_Percithan Farmhand_front.png"
+			}
+		},
+		{
+			"name": "Ithian Ransacker",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{R}",
+			"type": "Creature — Lizard Werewolf Barbarian ",
+			"collector_number": "146",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Myrmiredon.github.io/sets/AKU-files/img/146_Ithian Ransacker_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/146_Ithian Ransacker_front.png"
+			}
+		},
+		{
+			"name": "Sired Innocent",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Human Werewolf Citizen ",
+			"collector_number": "163",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Myrmiredon.github.io/sets/AKU-files/img/163_Sired Innocent_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/163_Sired Innocent_front.png"
+			}
+		},
+		{
+			"name": "Eulogist of Champions",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{G}",
+			"type": "Creature — Centaur Werewolf Druid ",
+			"collector_number": "184",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Myrmiredon.github.io/sets/AKU-files/img/184_Eulogist of Champions_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/184_Eulogist of Champions_front.png"
+			}
+		},
+		{
+			"name": "Hazenwyld Reclaimer",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}",
+			"type": "Creature — Human Werewolf Druid ",
+			"collector_number": "195",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Myrmiredon.github.io/sets/AKU-files/img/195_Hazenwyld Reclaimer_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/195_Hazenwyld Reclaimer_front.png"
+			}
+		},
+		{
+			"name": "Channelling Amulet",
+			"rarity": "uncommon",
+			"mana_cost": "{1}",
+			"type": "Artifact — Equipment ",
+			"collector_number": "250",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/250_Channelling Amulet.png"
+			}
+		},
+		{
+			"name": "Tainted Bass",
+			"rarity": "uncommon",
+			"mana_cost": "{U}",
+			"type": "Creature — Fish Werewolf Serf ",
+			"collector_number": "80",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Myrmiredon.github.io/sets/AKU-files/img/80_Tainted Bass_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/80_Tainted Bass_front.png"
+			}
+		},
+		{
+			"name": "Odajex Explorer",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}",
+			"type": "Creature — Human Werewolf Wizard ",
+			"collector_number": "153",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Myrmiredon.github.io/sets/AKU-files/img/153_Odajex Explorer_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/153_Odajex Explorer_front.png"
+			}
+		},
+		{
+			"name": "Hazenwyld Tender",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Human Werewolf Druid ",
+			"collector_number": "196",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Myrmiredon.github.io/sets/AKU-files/img/196_Hazenwyld Tender_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/196_Hazenwyld Tender_front.png"
+			}
+		},
+		{
+			"name": "Callwolf Champion",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}{G}",
+			"type": "Creature — Bear Werewolf Warrior ",
+			"collector_number": "223",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Myrmiredon.github.io/sets/AKU-files/img/223_Callwolf Champion_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/223_Callwolf Champion_front.png"
+			}
+		},
+		{
+			"name": "Shield of Saraja",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}{W}",
+			"type": "Creature — Human Werewolf Knight ",
+			"collector_number": "244",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Myrmiredon.github.io/sets/AKU-files/img/244_Shield of Saraja_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/244_Shield of Saraja_front.png"
+			}
+		},
+		{
+			"name": "Funeral Director",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{W}",
+			"type": "Creature — Human Werewolf Cleric ",
+			"collector_number": "13",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Myrmiredon.github.io/sets/AKU-files/img/13_Funeral Director_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/13_Funeral Director_front.png"
+			}
+		},
+		{
+			"name": "Blackhand Jailer",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{W}",
+			"type": "Creature — Troll Werewolf Soldier ",
+			"collector_number": "4",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Myrmiredon.github.io/sets/AKU-files/img/4_Blackhand Jailer_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/4_Blackhand Jailer_front.png"
+			}
+		},
+		{
+			"name": "Veteran's Loathing",
+			"rarity": "common",
+			"mana_cost": "{B}{B}",
+			"type": "Instant",
+			"collector_number": "123",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/123_Veteran's Loathing.png"
+			}
+		},
+		{
+			"name": "Prosperous Port",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "268",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/268_Prosperous Port.png"
+			}
+		},
+		{
+			"name": "Vratan Spymaster",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}{B}",
+			"type": "Creature — Human Werewolf Rogue ",
+			"collector_number": "126",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Myrmiredon.github.io/sets/AKU-files/img/126_Vratan Spymaster_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/126_Vratan Spymaster_front.png"
+			}
+		},
+		{
+			"name": "Sarajex Veteran",
+			"rarity": "uncommon",
+			"mana_cost": "{W}",
+			"type": "Creature — Human Soldier ",
+			"collector_number": "35",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/35_Sarajex Veteran.png"
+			}
+		},
+		{
+			"name": "Postal Courier",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Bird Citizen ",
+			"collector_number": "32",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/32_Postal Courier.png"
+			}
+		},
+		{
+			"name": "Ithian Liberator",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{W}",
+			"type": "Creature — Lizard Warrior ",
+			"collector_number": "18",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/18_Ithian Liberator.png"
+			}
+		},
+		{
+			"name": "Master of Mortar",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{W}",
+			"type": "Creature — Dwarf Artificer ",
+			"collector_number": "22",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/22_Master of Mortar.png"
+			}
+		},
+		{
+			"name": "Godtouched Hex",
+			"rarity": "uncommon",
+			"mana_cost": "{5}{W}",
+			"type": "Creature — Hex Cleric ",
+			"collector_number": "14",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/14_Godtouched Hex.png"
+			}
+		},
+		{
+			"name": "Transcend Umwelts",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{W}",
+			"type": "Enchantment",
+			"collector_number": "42",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/42_Transcend Umwelts.png"
+			}
+		},
+		{
+			"name": "Fight as One",
+			"rarity": "uncommon",
+			"mana_cost": "{W}",
+			"type": "Instant",
+			"collector_number": "12",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/12_Fight as One.png"
+			}
+		},
+		{
+			"name": "Platinum's Proclamation",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}",
+			"type": "Instant",
+			"collector_number": "30",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/30_Platinum's Proclamation.png"
+			}
+		},
+		{
+			"name": "Fastidious Bridge",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}",
+			"type": "Enchantment",
+			"collector_number": "11",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/11_Fastidious Bridge.png"
+			}
+		},
+		{
+			"name": "Worldsense",
+			"rarity": "common",
+			"mana_cost": "{W}",
+			"type": "Enchantment — Aura ",
+			"collector_number": "45",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/45_Worldsense.png"
+			}
+		},
+		{
+			"name": "Steelskin Engineer",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{W}",
+			"type": "Creature — Human Werewolf Artificer ",
+			"collector_number": "40",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Myrmiredon.github.io/sets/AKU-files/img/40_Steelskin Engineer_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/40_Steelskin Engineer_front.png"
+			}
+		},
+		{
+			"name": "Library Access",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}",
+			"type": "Enchantment — Aura ",
+			"collector_number": "21",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/21_Library Access.png"
+			}
+		},
+		{
+			"name": "Societal Collapse",
+			"rarity": "rare",
+			"mana_cost": "{3}{W}{W}",
+			"type": "Sorcery",
+			"collector_number": "38",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/38_Societal Collapse.png"
+			}
+		},
+		{
+			"name": "Parliament Assembly",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{W}",
+			"type": "Artifact — Building ",
+			"collector_number": "26",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/26_Parliament Assembly.png"
+			}
+		},
+		{
+			"name": "Trash Compactor",
+			"rarity": "uncommon",
+			"mana_cost": "{B}",
+			"type": "Creature — Ooze Citizen ",
+			"collector_number": "121",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/121_Trash Compactor.png"
+			}
+		},
+		{
+			"name": "Dread Propagandist",
+			"rarity": "uncommon",
+			"mana_cost": "{6}{B}",
+			"type": "Creature — Human Zombie Cleric ",
+			"collector_number": "99",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/99_Dread Propagandist.png"
+			}
+		},
+		{
+			"name": "Percival's Silencer",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Human Rogue ",
+			"collector_number": "115",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/115_Percival's Silencer.png"
+			}
+		},
+		{
+			"name": "Evacuation Orders",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{B}",
+			"type": "Sorcery",
+			"collector_number": "101",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/101_Evacuation Orders.png"
+			}
+		},
+		{
+			"name": "Percival's Retainers",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{B}",
+			"type": "Creature — Human Zombie Knight ",
+			"collector_number": "114",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/114_Percival's Retainers.png"
+			}
+		},
+		{
+			"name": "Vratan War-Artist",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}",
+			"type": "Creature — Human Artist ",
+			"collector_number": "127",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/127_Vratan War-Artist.png"
+			}
+		},
+		{
+			"name": "Thoughtlich Possession",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{B}",
+			"type": "Sorcery",
+			"collector_number": "119",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/119_Thoughtlich Possession.png"
+			}
+		},
+		{
+			"name": "Hex Anesthetist",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{B}",
+			"type": "Creature — Hex Advisor ",
+			"collector_number": "103",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/103_Hex Anesthetist.png"
+			}
+		},
+		{
+			"name": "Smelly Sewers",
+			"rarity": "uncommon",
+			"mana_cost": "{B}",
+			"type": "Artifact — Building ",
+			"collector_number": "118",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/118_Smelly Sewers.png"
+			}
+		},
+		{
+			"name": "Omnisonder's Influence",
+			"rarity": "mythic",
+			"mana_cost": "{1}{U}{U}{U}",
+			"type": "Enchantment",
+			"collector_number": "70",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/70_Omnisonder's Influence.png"
+			}
+		},
+		{
+			"name": "Carpenter's Tools",
+			"rarity": "uncommon",
+			"mana_cost": "{G}",
+			"type": "Artifact — Equipment ",
+			"collector_number": "177",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/177_Carpenter's Tools.png"
+			}
+		},
+		{
+			"name": "Monastery Ambassador",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}",
+			"type": "Creature — Dryad Monk ",
+			"collector_number": "201",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/201_Monastery Ambassador.png"
+			}
+		},
+		{
+			"name": "Police Officer",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{G}",
+			"type": "Creature — Ooze Soldier ",
+			"collector_number": "205",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/205_Police Officer.png"
+			}
+		},
+		{
+			"name": "Percithan Lifecrafter",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{G}",
+			"type": "Creature — Human Artificer ",
+			"collector_number": "204",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/204_Percithan Lifecrafter.png"
+			}
+		},
+		{
+			"name": "Timeless Ancient",
+			"rarity": "uncommon",
+			"mana_cost": "{5}{G}",
+			"type": "Creature — Beast Spirit Mystic ",
+			"collector_number": "210",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/210_Timeless Ancient.png"
+			}
+		},
+		{
+			"name": "Sarajex Meekblade",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Frog Squirrel Knight ",
+			"collector_number": "207",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/207_Sarajex Meekblade.png"
+			}
+		},
+		{
+			"name": "Callwolf Disobedience",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}",
+			"type": "Enchantment — Aura ",
+			"collector_number": "175",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/175_Callwolf Disobedience.png"
+			}
+		},
+		{
+			"name": "Ending Earthly Hibernation",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{G}",
+			"type": "Enchantment",
+			"collector_number": "183",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/183_Ending Earthly Hibernation.png"
+			}
+		},
+		{
+			"name": "Electoral Victory",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}",
+			"type": "Instant",
+			"collector_number": "182",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/182_Electoral Victory.png"
+			}
+		},
+		{
+			"name": "Industrialise",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{G}",
+			"type": "Sorcery",
+			"collector_number": "198",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/198_Industrialise.png"
+			}
+		},
+		{
+			"name": "Unsleeping City",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{G}{G}",
+			"type": "Enchantment",
+			"collector_number": "212",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/212_Unsleeping City.png"
+			}
+		},
+		{
+			"name": "Circus of Ekrata",
+			"rarity": "rare",
+			"mana_cost": "{2}{R}",
+			"type": "Artifact — Building ",
+			"collector_number": "135",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/135_Circus of Ekrata.png"
+			}
+		},
+		{
+			"name": "Council Housing",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}",
+			"type": "Artifact — Building ",
+			"collector_number": "179",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/179_Council Housing.png"
+			}
+		},
+		{
+			"name": "Errant Ur-Gifted",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}",
+			"type": "Creature — Cat Dragon Shaman ",
+			"collector_number": "138",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/138_Errant Ur-Gifted.png"
+			}
+		},
+		{
+			"name": "Downtrodden Pavement",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{R}",
+			"type": "Artifact Creature — Golem Artificer ",
+			"collector_number": "137",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/137_Downtrodden Pavement.png"
+			}
+		},
+		{
+			"name": "Model Sculptor",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}{U}",
+			"type": "Creature — Human Artificer ",
+			"collector_number": "64",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/64_Model Sculptor.png"
+			}
+		},
+		{
+			"name": "Odajex Idoliser",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}",
+			"type": "Creature — Human Wizard ",
+			"collector_number": "67",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/67_Odajex Idoliser.png"
+			}
+		},
+		{
+			"name": "Will of the People",
+			"rarity": "uncommon",
+			"mana_cost": "{6}{U}",
+			"type": "Instant",
+			"collector_number": "86",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/86_Will of the People.png"
+			}
+		},
+		{
+			"name": "Ithian Outcast",
+			"rarity": "uncommon",
+			"mana_cost": "{U}",
+			"type": "Creature — Lizard Wizard ",
+			"collector_number": "59",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/59_Ithian Outcast.png"
+			}
+		},
+		{
+			"name": "Syakir's Attendant",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{U}",
+			"type": "Creature — Bird Monk ",
+			"collector_number": "79",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/79_Syakir's Attendant.png"
+			}
+		},
+		{
+			"name": "Tourist Attraction",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{U}",
+			"type": "Instant",
+			"collector_number": "82",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/82_Tourist Attraction.png"
+			}
+		},
+		{
+			"name": "Deescalate",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}",
+			"type": "Instant",
+			"collector_number": "49",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/49_Deescalate.png"
+			}
+		},
+		{
+			"name": "Grandfather Clock",
+			"rarity": "uncommon",
+			"mana_cost": "{U}",
+			"type": "Enchantment",
+			"collector_number": "53",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/53_Grandfather Clock.png"
+			}
+		},
+		{
+			"name": "Poisoned Words",
+			"rarity": "uncommon",
+			"mana_cost": "{5}{U}{U}",
+			"type": "Enchantment — Aura ",
+			"collector_number": "75",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/75_Poisoned Words.png"
+			}
+		},
+		{
+			"name": "Meandering Stream",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}",
+			"type": "Enchantment",
+			"collector_number": "63",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/63_Meandering Stream.png"
+			}
+		},
+		{
+			"name": "Fire Engine",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Artifact — Vehicle ",
+			"collector_number": "9",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/9_Fire Engine.png"
+			}
+		},
+		{
+			"name": "Care Worker",
+			"rarity": "common",
+			"mana_cost": "{R}",
+			"type": "Creature — Human Citizen ",
+			"collector_number": "133",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/133_Care Worker.png"
+			}
+		},
+		{
+			"name": "Foreboding Abode",
+			"rarity": "uncommon",
+			"mana_cost": "{R}",
+			"type": "Enchantment",
+			"collector_number": "140",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/140_Foreboding Abode.png"
+			}
+		},
+		{
+			"name": "Brutal Retaliation",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}",
+			"type": "Sorcery",
+			"collector_number": "130",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/130_Brutal Retaliation.png"
+			}
+		},
+		{
+			"name": "Channel the Call",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}",
+			"type": "Instant",
+			"collector_number": "134",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/134_Channel the Call.png"
+			}
+		},
+		{
+			"name": "Stressed Supports",
+			"rarity": "common",
+			"mana_cost": "{R}",
+			"type": "Enchantment",
+			"collector_number": "165",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/165_Stressed Supports.png"
+			}
+		},
+		{
+			"name": "Monastery Librarians",
+			"rarity": "uncommon",
+			"mana_cost": "{2}",
+			"type": "Artifact Creature — Construct Pest ",
+			"collector_number": "255",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/255_Monastery Librarians.png"
+			}
+		},
+		{
+			"name": "Marketplace Guide",
+			"rarity": "uncommon",
+			"mana_cost": "{4}",
+			"type": "Artifact Creature — Construct Citizen ",
+			"collector_number": "254",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/254_Marketplace Guide.png"
+			}
+		},
+		{
+			"name": "Fire Station",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{U}",
+			"type": "Artifact — Building ",
+			"collector_number": "51",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/51_Fire Station.png"
+			}
+		},
+		{
+			"name": "Crowd of Hooligans",
+			"rarity": "common",
+			"mana_cost": "{4}{B}",
+			"type": "Creature — Human Citizen ",
+			"collector_number": "95",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/95_Crowd of Hooligans.png"
+			}
+		},
+		{
+			"name": "Lycanthropic Dispute",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}",
+			"type": "Sorcery",
+			"collector_number": "148",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/148_Lycanthropic Dispute.png"
+			}
+		},
+		{
+			"name": "Incarnation",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Incarnation ",
+			"collector_number": "6",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/6_Incarnation.png"
+			}
+		},
+		{
+			"name": "Dragon",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Dragon ",
+			"collector_number": "4",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/4_Dragon.png"
+			}
+		},
+		{
+			"name": "Seething Forge",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}",
+			"type": "Enchantment",
+			"collector_number": "162",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/162_Seething Forge.png"
+			}
+		},
+		{
+			"name": "Devout Utopianist",
+			"rarity": "rare",
+			"mana_cost": "{W}",
+			"type": "Creature — Human Advisor ",
+			"collector_number": "7",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/7_Devout Utopianist.png"
+			}
+		},
+		{
+			"name": "Military Barracks",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{R}",
+			"type": "Artifact — Building ",
+			"collector_number": "151",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/151_Military Barracks.png"
+			}
+		},
+		{
+			"name": "Vassal of Thoughts",
+			"rarity": "rare",
+			"mana_cost": "{2}{G}",
+			"type": "Creature — Hydra Werewolf Druid ",
+			"collector_number": "214",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Myrmiredon.github.io/sets/AKU-files/img/214_Vassal of Thoughts_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/214_Vassal of Thoughts_front.png"
+			}
+		},
+		{
+			"name": "Cargo Train",
+			"rarity": "uncommon",
+			"mana_cost": "{2}",
+			"type": "Artifact  — Vehicle ",
+			"collector_number": "249",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/249_Cargo Train.png"
+			}
+		},
+		{
+			"name": "Segment",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Artifact Creature — Segment ",
+			"collector_number": "12",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/12_Segment.png"
+			}
+		},
+		{
+			"name": "Worker",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Citizen ",
+			"collector_number": "7",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/7_Worker.png"
+			}
+		},
+		{
+			"name": "Svakarataja, Hex Metropolis",
+			"rarity": "mythic",
+			"mana_cost": "{8}",
+			"type": "Legendary Artifact Creature — Building Worm ",
+			"collector_number": "259",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/259_Svakarataja, Hex Metropolis.png"
+			}
+		},
+		{
+			"name": "Karaja Hetegex",
+			"rarity": "mythic",
+			"mana_cost": "{1}{U}{B}",
+			"type": "Legendary Planeswalker — Karaja ",
+			"collector_number": "232",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/232_Karaja Hetegex.png"
+			}
+		},
+		{
+			"name": "Trueblight Slayer",
+			"rarity": "common",
+			"mana_cost": "{3}{W}",
+			"type": "Creature — Hex Cleric ",
+			"collector_number": "43",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/43_Trueblight Slayer.png"
+			}
+		},
+		{
+			"name": "Hex Trueblight",
+			"rarity": "rare",
+			"mana_cost": "{2}{B}{B}",
+			"type": "Creature — Hex Horror ",
+			"collector_number": "104",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/104_Hex Trueblight.png"
+			}
+		},
+		{
+			"name": "Construct",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Artifact Creature — Construct ",
+			"collector_number": "8",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/8_Construct.png"
+			}
+		},
+		{
+			"name": "Intrude Upon Memories",
+			"rarity": "rare",
+			"mana_cost": "{X}{U}{U}",
+			"type": "Instant",
+			"collector_number": "56",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/56_Intrude Upon Memories.png"
+			}
+		},
+		{
+			"name": "Akaaja, Steel Chancellor",
+			"rarity": "rare",
+			"mana_cost": "{1}{W}{B}",
+			"type": "Legendary Creature — Hex Noble ",
+			"collector_number": "217",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/217_Akaaja, Steel Chancellor.png"
+			}
+		},
+		{
+			"name": "Urban Sprawl",
+			"rarity": "rare",
+			"mana_cost": "{3}{W}",
+			"type": "Sorcery",
+			"collector_number": "44",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/44_Urban Sprawl.png"
+			}
+		},
+		{
+			"name": "Ruined Settlement",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "269",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Myrmiredon.github.io/sets/AKU-files/img/269_Ruined Settlement_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/269_Ruined Settlement_front.png"
+			}
+		},
+		{
+			"name": "Eternal Soulmate",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}",
+			"type": "Creature — Merfolk Werewolf Cleric ",
+			"collector_number": "10",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Myrmiredon.github.io/sets/AKU-files/img/10_Eternal Soulmate_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/10_Eternal Soulmate_front.png"
+			}
+		},
+		{
+			"name": "Odajex Regent",
+			"rarity": "rare",
+			"mana_cost": "{3}{U}",
+			"type": "Creature — Sphinx Werewolf Serf ",
+			"collector_number": "68",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Myrmiredon.github.io/sets/AKU-files/img/68_Odajex Regent_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/68_Odajex Regent_front.png"
+			}
+		},
+		{
+			"name": "Lightning's Attendant",
+			"rarity": "rare",
+			"mana_cost": "{R}",
+			"type": "Creature — Human Werewolf Soldier ",
+			"collector_number": "147",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Myrmiredon.github.io/sets/AKU-files/img/147_Lightning's Attendant_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/147_Lightning's Attendant_front.png"
+			}
+		},
+		{
+			"name": "Debt Collector",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}",
+			"type": "Creature — Demon Werewolf Citizen ",
+			"collector_number": "97",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Myrmiredon.github.io/sets/AKU-files/img/97_Debt Collector_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/97_Debt Collector_front.png"
+			}
+		},
+		{
+			"name": "Urdonic Tourist",
+			"rarity": "rare",
+			"mana_cost": "{3}{R}",
+			"type": "Creature — Dragon Werewolf Citizen ",
+			"collector_number": "169",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Myrmiredon.github.io/sets/AKU-files/img/169_Urdonic Tourist_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/169_Urdonic Tourist_front.png"
+			}
+		},
+		{
+			"name": "Routine Maintenance",
+			"rarity": "rare",
+			"mana_cost": "{1}{W}",
+			"type": "Enchantment",
+			"collector_number": "33",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/33_Routine Maintenance.png"
+			}
+		},
+		{
+			"name": "Shambling Shelter",
+			"rarity": "rare",
+			"mana_cost": "{2}{G}",
+			"type": "Artifact Creature — Treefolk Building ",
+			"collector_number": "209",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/209_Shambling Shelter.png"
+			}
+		},
+		{
+			"name": "Ullrgethin, Syakir of Ith",
+			"rarity": "rare",
+			"mana_cost": "{W}{U}",
+			"type": "Legendary Artifact — Equipment ",
+			"collector_number": "246",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/246_Ullrgethin, Syakir of Ith.png"
+			}
+		},
+		{
+			"name": "Jessica, War Veteran",
+			"rarity": "rare",
+			"mana_cost": "{2}{R}{W}",
+			"type": "Legendary Creature — Human Werewolf ",
+			"collector_number": "231",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Myrmiredon.github.io/sets/AKU-files/img/231_Jessica, War Veteran_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/231_Jessica, War Veteran_front.png"
+			}
+		},
+		{
+			"name": "Halaja of the Embraced",
+			"rarity": "rare",
+			"mana_cost": "{1}{G}{W}",
+			"type": "Legendary Creature — Bear Noble ",
+			"collector_number": "228",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/228_Halaja of the Embraced.png"
+			}
+		},
+		{
+			"name": "Agnes, Royal Tutor",
+			"rarity": "rare",
+			"mana_cost": "{1}{U}{B}",
+			"type": "Legendary Creature — Human Noble ",
+			"collector_number": "216",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/216_Agnes, Royal Tutor.png"
+			}
+		},
+		{
+			"name": "Hasaaja, Voice of Odajex",
+			"rarity": "rare",
+			"mana_cost": "{U}{R}",
+			"type": "Legendary Creature — Incarnation Noble ",
+			"collector_number": "229",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/229_Hasaaja, Voice of Odajex.png"
+			}
+		},
+		{
+			"name": "Novablast, Urdonic Queen",
+			"rarity": "rare",
+			"mana_cost": "{4}{B}{R}",
+			"type": "Legendary Creature — Dragon Noble ",
+			"collector_number": "235",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/235_Novablast, Urdonic Queen.png"
+			}
+		},
+		{
+			"name": "Dread Tyrant Algaja",
+			"rarity": "rare",
+			"mana_cost": "{B}{G}",
+			"type": "Legendary Creature — Crocodile Noble ",
+			"collector_number": "226",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/226_Dread Tyrant Algaja.png"
+			}
+		},
+		{
+			"name": "Gristle, Callwolf Attendant",
+			"rarity": "rare",
+			"mana_cost": "{R}{G}",
+			"type": "Legendary Creature — Human Werewolf ",
+			"collector_number": "227",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Myrmiredon.github.io/sets/AKU-files/img/227_Gristle, Callwolf Attendant_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/227_Gristle, Callwolf Attendant_front.png"
+			}
+		},
+		{
+			"name": "Percival, Savior of Man",
+			"rarity": "mythic",
+			"mana_cost": "{5}{B}{B}",
+			"type": "Legendary Creature — Human Praetor ",
+			"collector_number": "111",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/111_Percival, Savior of Man.png"
+			}
+		},
+		{
+			"name": "Eternal Reign",
+			"rarity": "rare",
+			"mana_cost": "{1}{W}",
+			"type": "Enchantment",
+			"collector_number": "9",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/9_Eternal Reign.png"
+			}
+		},
+		{
+			"name": "Percithan Mediator",
+			"rarity": "rare",
+			"mana_cost": "{1}{G}{W}{U}",
+			"type": "Creature — Phelddagrif Citizen ",
+			"collector_number": "236",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/236_Percithan Mediator.png"
+			}
+		},
+		{
+			"name": "Akellan Uprising",
+			"rarity": "rare",
+			"mana_cost": "{U}{B}",
+			"type": "Sorcery",
+			"collector_number": "218",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/218_Akellan Uprising.png"
+			}
+		},
+		{
+			"name": "Shattered Identity",
+			"rarity": "rare",
+			"mana_cost": "{4}{W}{U}",
+			"type": "Sorcery",
+			"collector_number": "243",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/243_Shattered Identity.png"
+			}
+		},
+		{
+			"name": "Empathiser",
+			"rarity": "rare",
+			"mana_cost": "{4}{U}",
+			"type": "Creature — Shapeshifter Citizen ",
+			"collector_number": "50",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/50_Empathiser.png"
+			}
+		},
+		{
+			"name": "Picantomancer",
+			"rarity": "rare",
+			"mana_cost": "{7}{U}",
+			"type": "Creature — Giant Shaman ",
+			"collector_number": "73",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/73_Picantomancer.png"
+			}
+		},
+		{
+			"name": "Toxic Mindset",
+			"rarity": "rare",
+			"mana_cost": "{U}",
+			"type": "Enchantment",
+			"collector_number": "83",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/83_Toxic Mindset.png"
+			}
+		},
+		{
+			"name": "Grieve",
+			"rarity": "rare",
+			"mana_cost": "{B}",
+			"type": "Instant",
+			"collector_number": "102",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/102_Grieve.png"
+			}
+		},
+		{
+			"name": "Host Farm",
+			"rarity": "rare",
+			"mana_cost": "{1}{B}",
+			"type": "Enchantment",
+			"collector_number": "105",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/105_Host Farm.png"
+			}
+		},
+		{
+			"name": "Civil War",
+			"rarity": "rare",
+			"mana_cost": "{1}{B}{R}",
+			"type": "Sorcery",
+			"collector_number": "224",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/224_Civil War.png"
+			}
+		},
+		{
+			"name": "Profane Rhetoric",
+			"rarity": "rare",
+			"mana_cost": "{1}{B}{B}",
+			"type": "Sorcery",
+			"collector_number": "117",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/117_Profane Rhetoric.png"
+			}
+		},
+		{
+			"name": "Bisapience Shredder",
+			"rarity": "rare",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Human Zombie Cleric ",
+			"collector_number": "90",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/90_Bisapience Shredder.png"
+			}
+		},
+		{
+			"name": "Percival's Resurrection",
+			"rarity": "rare",
+			"mana_cost": "{5}{B}{B}",
+			"type": "Sorcery",
+			"collector_number": "113",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/113_Percival's Resurrection.png"
+			}
+		},
+		{
+			"name": "Zealot's Protection",
+			"rarity": "rare",
+			"mana_cost": "{1}{R}{R}",
+			"type": "Instant",
+			"collector_number": "171",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/171_Zealot's Protection.png"
+			}
+		},
+		{
+			"name": "Parfaitionist",
+			"rarity": "rare",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Human Artist ",
+			"collector_number": "156",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/156_Parfaitionist.png"
+			}
+		},
+		{
+			"name": "Call Overload",
+			"rarity": "mythic",
+			"mana_cost": "{6}{R}{R}",
+			"type": "Sorcery",
+			"collector_number": "131",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/131_Call Overload.png"
+			}
+		},
+		{
+			"name": "Mentor of Odajex",
+			"rarity": "rare",
+			"mana_cost": "{2}{R}",
+			"type": "Creature — Human Shaman ",
+			"collector_number": "150",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/150_Mentor of Odajex.png"
+			}
+		},
+		{
+			"name": "Tense Atmosphere",
+			"rarity": "rare",
+			"mana_cost": "{1}{R}{R}",
+			"type": "Enchantment",
+			"collector_number": "166",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/166_Tense Atmosphere.png"
+			}
+		},
+		{
+			"name": "Panicked Populace",
+			"rarity": "rare",
+			"mana_cost": "{R}",
+			"type": "Enchantment",
+			"collector_number": "155",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/155_Panicked Populace.png"
+			}
+		},
+		{
+			"name": "Godfather of Cement",
+			"rarity": "rare",
+			"mana_cost": "{3}{G}{G}",
+			"type": "Creature — Golem Artificer ",
+			"collector_number": "190",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/190_Godfather of Cement.png"
+			}
+		},
+		{
+			"name": "Ecologoyf",
+			"rarity": "rare",
+			"mana_cost": "{1}{G}{G}",
+			"type": "Creature — Lhurgoyf Druid ",
+			"collector_number": "181",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/181_Ecologoyf.png"
+			}
+		},
+		{
+			"name": "Arlinn's Intervention",
+			"rarity": "rare",
+			"mana_cost": "{G}",
+			"type": "Instant",
+			"collector_number": "173",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/173_Arlinn's Intervention.png"
+			}
+		},
+		{
+			"name": "Callwolf Festival",
+			"rarity": "rare",
+			"mana_cost": "{X}{G}",
+			"type": "Sorcery",
+			"collector_number": "176",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/176_Callwolf Festival.png"
+			}
+		},
+		{
+			"name": "Natural Hierarchy",
+			"rarity": "rare",
+			"mana_cost": "{2}{G}{G}",
+			"type": "Sorcery",
+			"collector_number": "202",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/202_Natural Hierarchy.png"
+			}
+		},
+		{
+			"name": "Gigantomancer",
+			"rarity": "rare",
+			"mana_cost": "{7}{G}",
+			"type": "Creature — Human Shaman ",
+			"collector_number": "187",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/187_Gigantomancer.png"
+			}
+		},
+		{
+			"name": "Ambassador's Gift",
+			"rarity": "rare",
+			"mana_cost": "{1}{G}",
+			"type": "Sorcery",
+			"collector_number": "172",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/172_Ambassador's Gift.png"
+			}
+		},
+		{
+			"name": "Percithan Embassy",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "267",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/267_Percithan Embassy.png"
+			}
+		},
+		{
+			"name": "Ithian Embassy",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "265",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/265_Ithian Embassy.png"
+			}
+		},
+		{
+			"name": "Svakaratajex Embassy",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "270",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/270_Svakaratajex Embassy.png"
+			}
+		},
+		{
+			"name": "Odajex Embassy",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "266",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/266_Odajex Embassy.png"
+			}
+		},
+		{
+			"name": "Hazenwyld Embassy",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "262",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/262_Hazenwyld Embassy.png"
+			}
+		},
+		{
+			"name": "Platinum, Heir to Cities",
+			"rarity": "mythic",
+			"mana_cost": "{2}{G}{W}",
+			"type": "Legendary Creature — Human Noble ",
+			"collector_number": "237",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Myrmiredon.github.io/sets/AKU-files/img/237_Platinum, Heir to Cities_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/237_Platinum, Heir to Cities_front.png"
+			}
+		},
+		{
+			"name": "Scion of Ixaja",
+			"rarity": "mythic",
+			"mana_cost": "{3}{W}{W}",
+			"type": "Creature — Hex Angel ",
+			"collector_number": "36",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/36_Scion of Ixaja.png"
+			}
+		},
+		{
+			"name": "Arlinn, Soulbonded",
+			"rarity": "mythic",
+			"mana_cost": "{2}{R}{G}",
+			"type": "Legendary Planeswalker — Arlinn ",
+			"collector_number": "221",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Myrmiredon.github.io/sets/AKU-files/img/221_Arlinn, Soulbonded_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/221_Arlinn, Soulbonded_front.png"
+			}
+		},
+		{
+			"name": "The Argent Court",
+			"rarity": "rare",
+			"mana_cost": "{2}{G}{U}",
+			"type": "Legendary Artifact Creature — Building Noble ",
+			"collector_number": "220",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/220_The Argent Court.png"
+			}
+		},
+		{
+			"name": "Phtexaja, Nemesis of Virtue",
+			"rarity": "rare",
+			"mana_cost": "{4}{R}{R}",
+			"type": "Legendary Creature — Hex Dragon ",
+			"collector_number": "157",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/157_Phtexaja, Nemesis of Virtue.png"
+			}
+		},
+		{
+			"name": "Lord Herongrand",
+			"rarity": "mythic",
+			"mana_cost": "{4}{B}{G}{U}",
+			"type": "Legendary Creature — Zombie Noble ",
+			"collector_number": "233",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/233_Lord Herongrand.png"
+			}
+		},
+		{
+			"name": "Polity",
+			"rarity": "mythic",
+			"mana_cost": "{3}{W}{W}{W}{W}",
+			"type": "Enchantment Creature — Incarnation ",
+			"collector_number": "31",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/31_Polity.png"
+			}
+		},
+		{
+			"name": "Literacy",
+			"rarity": "mythic",
+			"mana_cost": "{3}{U}{U}{U}{U}",
+			"type": "Enchantment Creature — Incarnation ",
+			"collector_number": "61",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/61_Literacy.png"
+			}
+		},
+		{
+			"name": "Artistry",
+			"rarity": "mythic",
+			"mana_cost": "{3}{B}{B}{B}{B}",
+			"type": "Enchantment Creature — Incarnation ",
+			"collector_number": "87",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/87_Artistry.png"
+			}
+		},
+		{
+			"name": "Fertility",
+			"rarity": "mythic",
+			"mana_cost": "{3}{G}{G}{G}{G}",
+			"type": "Enchantment Creature — Incarnation ",
+			"collector_number": "185",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/185_Fertility.png"
+			}
+		},
+		{
+			"name": "Industry",
+			"rarity": "mythic",
+			"mana_cost": "{3}{R}{R}{R}{R}",
+			"type": "Enchantment Creature — Incarnation ",
+			"collector_number": "144",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/144_Industry.png"
+			}
+		},
+		{
+			"name": "Saraja's Monument",
+			"rarity": "rare",
+			"mana_cost": "{3}{W}",
+			"type": "Artifact — Building ",
+			"collector_number": "34",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/34_Saraja's Monument.png"
+			}
+		},
+		{
+			"name": "Percival's Monument",
+			"rarity": "rare",
+			"mana_cost": "{4}{B}",
+			"type": "Artifact — Building ",
+			"collector_number": "112",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/112_Percival's Monument.png"
+			}
+		},
+		{
+			"name": "Pithing Needle",
+			"rarity": "uncommon",
+			"mana_cost": "{1}",
+			"type": "Artifact",
+			"collector_number": "257",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/257_Pithing Needle.png"
+			}
+		},
+		{
+			"name": "Vrataport Embassy",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "272",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/272_Vrataport Embassy.png"
+			}
+		},
+		{
+			"name": "Embraced Embassy",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "261",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/261_Embraced Embassy.png"
+			}
+		},
+		{
+			"name": "Insomnian Embassy",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "264",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/264_Insomnian Embassy.png"
+			}
+		},
+		{
+			"name": "Urdonic Embassy",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "271",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/271_Urdonic Embassy.png"
+			}
+		},
+		{
+			"name": "Herongrand's Embassy",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "263",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/263_Herongrand's Embassy.png"
+			}
+		},
+		{
+			"name": "New Connections",
+			"rarity": "rare",
+			"mana_cost": "{1}{W}",
+			"type": "Enchantment",
+			"collector_number": "25",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/25_New Connections.png"
+			}
+		},
+		{
+			"name": "Differences Reconciled",
+			"rarity": "mythic",
+			"mana_cost": "{X}{R}{R}{W}",
+			"type": "Instant",
+			"collector_number": "225",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/225_Differences Reconciled.png"
+			}
+		},
+		{
+			"name": "Human",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Human ",
+			"collector_number": "5",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/5_Human.png"
+			}
+		},
+		{
+			"name": "Ithian Oligarch",
+			"rarity": "rare",
+			"mana_cost": "{3}{U}",
+			"type": "Creature — Lizard Mystic ",
+			"collector_number": "58",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/58_Ithian Oligarch.png"
+			}
+		},
+		{
+			"name": "Rade, Tempest Vassal",
+			"rarity": "mythic",
+			"mana_cost": "{R}{G}{W}",
+			"type": "Legendary Creature — Horse Werewolf ",
+			"collector_number": "239",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Myrmiredon.github.io/sets/AKU-files/img/239_Rade, Tempest Vassal_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/239_Rade, Tempest Vassal_front.png"
+			}
+		},
+		{
+			"name": "Treasure",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Artifact — Treasure ",
+			"collector_number": "13",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/13_Treasure.png"
+			}
+		},
+		{
+			"name": "Werewolf",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Werewolf ",
+			"collector_number": "2",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/2_Werewolf.png"
+			}
+		},
+		{
+			"name": "Glyph",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Artifact — Glyph ",
+			"collector_number": "11",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/11_Glyph.png"
+			}
+		},
+		{
+			"name": "Citizen",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Citizen ",
+			"collector_number": "1",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/1_Citizen.png"
+			}
+		},
+		{
+			"name": "Karaja's Spark Hoard",
+			"rarity": "rare",
+			"mana_cost": "{1}",
+			"type": "Legendary Artifact",
+			"collector_number": "253",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/253_Karaja's Spark Hoard.png"
+			}
+		},
+		{
+			"name": "Massive Dam",
+			"rarity": "rare",
+			"mana_cost": "{3}{U}",
+			"type": "Artifact Creature — Building Wall ",
+			"collector_number": "62",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/62_Massive Dam.png"
+			}
+		},
+		{
+			"name": "Food",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Artifact — Food ",
+			"collector_number": "10",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/10_Food.png"
+			}
+		},
+		{
+			"name": "Embraced Representative",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature",
+			"collector_number": "3",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/3_Embraced Representative.png"
+			}
+		},
+		{
+			"name": "Forest",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Forest ",
+			"collector_number": "277",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/277_Forest.png"
+			}
+		},
+		{
+			"name": "Plains",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Plains ",
+			"collector_number": "273",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/273_Plains.png"
+			}
+		},
+		{
+			"name": "Island",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Island ",
+			"collector_number": "274",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/274_Island.png"
+			}
+		},
+		{
+			"name": "Mountain",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Mountain ",
+			"collector_number": "276",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/276_Mountain.png"
+			}
+		},
+		{
+			"name": "Swamp",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Swamp ",
+			"collector_number": "275",
+			"image_uris": {
+				"en": "https://Myrmiredon.github.io/sets/AKU-files/img/275_Swamp.png"
+			}
+		}
+	]
+[RareSlot(1)]
+2 Thoughtlich's Phylactery
+2 Societal Collapse
+2 Circus of Ekrata
+2 Devout Utopianist
+2 Vassal of Thoughts
+2 Hex Trueblight
+2 Intrude Upon Memories
+2 Akaaja, Steel Chancellor
+2 Urban Sprawl
+2 Ruined Settlement
+2 Eternal Soulmate
+2 Odajex Regent
+2 Lightning's Attendant
+2 Urdonic Tourist
+2 Routine Maintenance
+2 Shambling Shelter
+2 Ullrgethin, Syakir of Ith
+2 Jessica, War Veteran
+2 Halaja of the Embraced
+2 Agnes, Royal Tutor
+2 Hasaaja, Voice of Odajex
+2 Novablast, Urdonic Queen
+2 Dread Tyrant Algaja
+2 Gristle, Callwolf Attendant
+2 Eternal Reign
+2 Percithan Mediator
+2 Akellan Uprising
+2 Shattered Identity
+2 Empathiser
+2 Picantomancer
+2 Toxic Mindset
+2 Grieve
+2 Host Farm
+2 Civil War
+2 Profane Rhetoric
+2 Bisapience Shredder
+2 Percival's Resurrection
+2 Zealot's Protection
+2 Parfaitionist
+2 Mentor of Odajex
+2 Tense Atmosphere
+2 Panicked Populace
+2 Godfather of Cement
+2 Ecologoyf
+2 Arlinn's Intervention
+2 Callwolf Festival
+2 Natural Hierarchy
+2 Gigantomancer
+2 Ambassador's Gift
+2 Percithan Embassy
+2 Ithian Embassy
+2 Svakaratajex Embassy
+2 Odajex Embassy
+2 Hazenwyld Embassy
+2 The Argent Court
+2 Phtexaja, Nemesis of Virtue
+2 Saraja's Monument
+2 Percival's Monument
+2 Vrataport Embassy
+2 Embraced Embassy
+2 Insomnian Embassy
+2 Urdonic Embassy
+2 Herongrand's Embassy
+2 New Connections
+2 Ithian Oligarch
+2 Karaja's Spark Hoard
+2 Massive Dam
+1 Omnisonder's Influence
+1 Svakarataja, Hex Metropolis
+1 Karaja Hetegex
+1 Percival, Savior of Man
+1 Call Overload
+1 Platinum, Heir to Cities
+1 Scion of Ixaja
+1 Arlinn, Soulbonded
+1 Lord Herongrand
+1 Polity
+1 Literacy
+1 Artistry
+1 Fertility
+1 Industry
+1 Differences Reconciled
+1 Rade, Tempest Vassal
+[UncommonSlot(4)]
+9 Bisapient Rift
+9 Property Auctioneer
+9 Settlement's Birth
+9 Urdonic Tithe Taker
+9 Radicalised Revenant
+9 Ithian Emissaries
+9 Scion of the Call
+9 Lycanopractor
+9 Species Representative
+9 Ambassador of Svakarataja
+9 Badge of Office
+9 Unsafe Workplace
+9 Omnisonder's Flow
+9 Fiesty Yearling
+9 Endless Vassals
+9 Odajex Thrall
+9 Percithan Farmhand
+9 Ithian Ransacker
+9 Sired Innocent
+9 Eulogist of Champions
+9 Hazenwyld Reclaimer
+9 Channelling Amulet
+9 Tainted Bass
+9 Odajex Explorer
+9 Hazenwyld Tender
+9 Callwolf Champion
+9 Shield of Saraja
+9 Funeral Director
+9 Blackhand Jailer
+9 Prosperous Port
+9 Vratan Spymaster
+9 Sarajex Veteran
+9 Postal Courier
+9 Ithian Liberator
+9 Master of Mortar
+9 Godtouched Hex
+9 Transcend Umwelts
+9 Fight as One
+9 Platinum's Proclamation
+9 Fastidious Bridge
+9 Steelskin Engineer
+9 Library Access
+9 Parliament Assembly
+9 Trash Compactor
+9 Dread Propagandist
+9 Percival's Silencer
+9 Evacuation Orders
+9 Percival's Retainers
+9 Vratan War-Artist
+9 Thoughtlich Possession
+9 Hex Anesthetist
+9 Smelly Sewers
+9 Carpenter's Tools
+9 Monastery Ambassador
+9 Police Officer
+9 Percithan Lifecrafter
+9 Timeless Ancient
+9 Sarajex Meekblade
+9 Callwolf Disobedience
+9 Ending Earthly Hibernation
+9 Electoral Victory
+9 Industrialise
+9 Unsleeping City
+9 Council Housing
+9 Errant Ur-Gifted
+9 Downtrodden Pavement
+9 Model Sculptor
+9 Odajex Idoliser
+9 Will of the People
+9 Ithian Outcast
+9 Syakir's Attendant
+9 Tourist Attraction
+9 Deescalate
+9 Grandfather Clock
+9 Poisoned Words
+9 Meandering Stream
+9 Foreboding Abode
+9 Brutal Retaliation
+9 Channel the Call
+9 Monastery Librarians
+9 Marketplace Guide
+9 Fire Station
+9 Lycanthropic Dispute
+9 Seething Forge
+9 Military Barracks
+9 Cargo Train
+9 Debt Collector
+9 Pithing Needle
+[CommonSlot(10)]
+30 Crumbling Crib
+30 Impervious Walls
+30 Aspect of Community
+30 Pious Coinscale
+30 Den Builder
+30 Spireline Warden
+30 Ithian Snowstorm
+30 Passive-Aggressive Door
+30 Shining Hospital
+30 Imprisonment
+30 Hold Accountable
+30 Nature Reserve
+30 Canal Skater
+30 Mother of Notions
+30 Thought Leader
+30 Bastion of Morality
+30 Ithian Sentry
+30 Benevolent Farmhand
+30 Dusk Sentinel
+30 Vratan Philanthropist
+30 Percival's Vanguard
+30 Blighted Feast
+30 Collect Tax
+30 Aspect of Poverty
+30 Old Guard Fanatic
+30 Intensive Labor
+30 Donation Taker
+30 Consume Host
+30 Bones to Bricks
+30 Host Farm Shepherd
+30 Dead Weight
+30 Vratan Dockhand
+30 Host Farm Escapee
+30 Host Farm Entertainer
+30 Sarajex Veteran
+30 Spawn of Svakarataja
+30 Aspect of Commerce
+30 Raging Recruiter
+30 Thoughtglass Amulet
+30 Toddler Tantrum
+30 Wrangle
+30 Imposing Gateway
+30 Highlands Retriver
+30 Rowdy Protest
+30 Infectious Strike
+30 Call Thunder
+30 Dominated Vassal
+30 Gigantoform Protector
+30 Odajex Beastmaster
+30 Vratan Settlers
+30 Scrounging Thallid
+30 Hamletback Turtle
+30 Grassclade Defender
+30 Hazenwyld Envoy
+30 City-Razer
+30 Into the Crowd
+30 Disgraced Urdon
+30 Newborn Home
+30 Giant Growth
+30 Aspect of Harmony
+30 Rapid Construction
+30 Urban Development
+30 Gigant's Favor
+30 Sarajex Emissary
+30 Gigant's Wrath
+30 Highway Hitchhiker
+30 Hazenwyld Godbeast
+30 Integrate into Society
+30 Vratan Explorer
+30 Hand of Percival
+30 Cephalopticon
+30 Chilling Effect
+30 Percival's Strategist
+30 Vratan Portraitist
+30 Ithian Clairvoyant
+30 Highlands Warden
+30 Ithian Reaver
+30 Odajex Artificer
+30 Soften
+30 Take Back Control
+30 Narcoleptic Transformation
+30 Aspect of Innovation
+30 Ponder the Omnisonder
+30 Skyhigh Scaffolds
+30 Planning Permission
+30 Town Hall
+30 Grammar School
+30 War Memorial
+30 Emergency Club
+30 Bleak Jail
+30 Roadside Tavern
+30 Market Stall
+30 Monastery Warden
+30 City Center
+30 Pernicious Scheme
+30 Veteran's Loathing
+30 Worldsense
+30 Care Worker
+30 Stressed Supports
+30 Crowd of Hooligans
+30 Trueblight Slayer
