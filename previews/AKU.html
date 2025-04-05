@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" type="image/png" href="/sets/AKU-files/icon.png"/>
+	<link rel="stylesheet" href="/resources/header.css">
+	<title>AKU visual preview</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			overscroll-behavior: none;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		.main-content {
+			position: relative;
+			width: 100%;
+			float: left;
+			z-index: 2;
+			justify-items: center;
+		}
+		.sidebar {
+			position: sticky;
+			top: 0;
+			display: none;
+			text-align: center;
+			padding-right: 3%;
+			z-index: 1;
+			justify-items: center;
+		}
+		.sidebar-container {
+			width: 80%;
+			max-width: 375px;
+			position: relative;
+		}
+		.sidebar-h-img {
+			display: none;
+			transform: rotate(90deg);
+			position: absolute;
+			left: 10%;
+			top: 10%;
+			width: 85%;
+		}
+		.sidebar-img {
+			vertical-align: middle;
+			width: 100%;
+		}
+		.close-btn {
+			background: url('/img/close.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+			width: 10%;
+			height: 10%;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			right: 4%;
+		}
+		.close-btn:hover {
+			background: url('/img/close-hover.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+		}
+		.grid-container {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+			gap: 2px;
+			padding-left: 5%;
+			padding-right: 5%;
+			padding-bottom: 1%;
+			justify-items: center;
+			max-width: 1200px;
+		}
+		.grid-container img {
+			width: 100%;
+			height: auto;
+			display: block;
+			visibility: hidden;
+			cursor: pointer;
+		}
+		.banner {
+			width: 100%;
+			height: auto;
+			padding-top: 20px;
+			padding-bottom: 50px;
+		}
+		.logo {
+			display: block;
+			margin: auto;
+			max-width: 30%;
+			max-height: 320px;
+		}
+		.container {
+			position: relative;
+			width: 100%;
+		}
+		.container img {
+			width: 100%;
+			height: auto;
+		}
+		.flip-btn {
+			background: url('/img/flip.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+			width: 15%;
+			height: 11%;
+			cursor: pointer;
+			border: none;
+			position: absolute;
+			left: 50%;
+			top: 48%;
+			transform: translate(-50%, -50%);
+			opacity: 0.5;
+		}
+		.flip-btn:hover {
+			background: url('/img/flip-hover.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+		}
+		.icon-bar {
+			display: grid;
+			grid-template-columns: repeat(10, 3fr 2fr) 3fr;
+			gap: 1px;
+			padding-left: 5%;
+			padding-right: 5%;
+			padding-top: 2%;
+			padding-bottom: 1%;
+			justify-items: center;
+			align-items: center;
+		}
+		.icon-bar .icon img {
+			width: 90%;
+			max-width: 80px;
+			height: auto;
+			display: block;
+			padding: 5%;
+			margin: auto;
+			text-align: center;
+		}
+		.icon-bar .dot img {
+			width: 50%;
+			max-width: 65px;
+			height: auto;
+			display: block;
+			margin: auto;
+			text-align: center;
+		}
+		.preload-hidden {
+			display: none;
+		}
+		/* This is here to enable the stickiness in a Float environment. I don't know why it works but it does */
+		.footer {
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<img class="preload-hidden" src="/img/dot.png" />
+	<img class="preload-hidden" src="/sets/AKU-files/logo.png" />
+	<img class="preload-hidden" src="/sets/AKT-files/icon.png" />
+		<img class="preload-hidden" src="/sets/AKU-files/icon.png" />
+		<img class="preload-hidden" src="/sets/PVR-files/icon.png" />
+		<div class="header">
+		<div class="search-grid">
+			<a href="/"><img class="sg-logo" src="/img/banner.png"></a>
+			<img class="sg-icon" src="/img/search.png">
+			<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false">
+			<a href="/all-sets"><img src="/img/sets.png" class="sg-icon">Sets</a>
+			<a href="/deckbuilder"><img src="/img/deck.png" class="sg-icon">Deckbuilder</a>
+			<a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
+		</div>
+	</div>
+
+	<div class="icon-bar">
+			<div class="icon"><a href="AKT"><img src="/sets/AKT-files/icon.png"></img></a></div>
+		 <div class="dot"><img src="/img/dot.png"></img></div>
+		<div class="icon"><a href="AKU"><img src="/sets/AKU-files/icon.png"></img></a></div>
+		 <div class="dot"><img src="/img/dot.png"></img></div>
+		<div class="icon"><a href="PVR"><img src="/sets/PVR-files/icon.png"></img></a></div>
+
+		</div>
+		<div class="banner">
+		<img class="logo" src="/sets/AKU-files/logo.png">
+		</div>
+		<div class="main-content" id="main-content">
+			<div class="grid-container">
+				<div class="container"><img alt="/sets\AKU-files\img\31_Polity.png" id="31_Polity" data-flag="@X" onclick="openSidebar('31_Polity',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\61_Literacy.png" id="61_Literacy" data-flag="@X" onclick="openSidebar('61_Literacy',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\87_Artistry.png" id="87_Artistry" data-flag="@X" onclick="openSidebar('87_Artistry',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\131_Call Overload.png" id="131_Call Overload" data-flag="@X" onclick="openSidebar('131_Call Overload',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\185_Fertility.png" id="185_Fertility" data-flag="@X" onclick="openSidebar('185_Fertility',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\36_Scion of Ixaja.png" id="36_Scion of Ixaja" data-flag="@X" onclick="openSidebar('36_Scion of Ixaja',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\70_Omnisonder's Influence.png" id="70_Omnisonders Influence" data-flag="@X" onclick="openSidebar('70_Omnisonders Influence',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\111_Percival, Savior of Man.png" id="111_Percival, Savior of Man" data-flag="@X" onclick="openSidebar('111_Percival, Savior of Man',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\144_Industry.png" id="144_Industry" data-flag="@X" onclick="openSidebar('144_Industry',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\172_Ambassador's Gift.png" id="172_Ambassadors Gift" data-flag="@X" onclick="openSidebar('172_Ambassadors Gift',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\7_Devout Utopianist.png" id="7_Devout Utopianist" data-flag="@X" onclick="openSidebar('7_Devout Utopianist',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\50_Empathiser.png" id="50_Empathiser" data-flag="@X" onclick="openSidebar('50_Empathiser',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\90_Bisapience Shredder.png" id="90_Bisapience Shredder" data-flag="@X" onclick="openSidebar('90_Bisapience Shredder',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\135_Circus of Ekrata.png" id="135_Circus of Ekrata" data-flag="@X" onclick="openSidebar('135_Circus of Ekrata',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\173_Arlinn's Intervention.png" id="173_Arlinns Intervention" data-flag="@X" onclick="openSidebar('173_Arlinns Intervention',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\9_Eternal Reign.png" id="9_Eternal Reign" data-flag="@X" onclick="openSidebar('9_Eternal Reign',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\56_Intrude Upon Memories.png" id="56_Intrude Upon Memories" data-flag="@X" onclick="openSidebar('56_Intrude Upon Memories',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\102_Grieve.png" id="102_Grieve" data-flag="@X" onclick="openSidebar('102_Grieve',false)"></div>
+			<div class="container"><img data-alt_src="/sets\AKU-files\img\147_Lightning's Attendant_back.png" alt="/sets\AKU-files\img\147_Lightning's Attendant_front.png" id="147_Lightnings Attendant" data-flag="@XD" onclick="openSidebar('147_Lightnings Attendant',false)"><button class="flip-btn" onclick="imgFlip('147_Lightnings Attendant')"></button></div>
+			<div class="container"><img alt="/sets\AKU-files\img\176_Callwolf Festival.png" id="176_Callwolf Festival" data-flag="@X" onclick="openSidebar('176_Callwolf Festival',false)"></div>
+			<div class="container"><img data-alt_src="/sets\AKU-files\img\10_Eternal Soulmate_back.png" alt="/sets\AKU-files\img\10_Eternal Soulmate_front.png" id="10_Eternal Soulmate" data-flag="@XD" onclick="openSidebar('10_Eternal Soulmate',false)"><button class="flip-btn" onclick="imgFlip('10_Eternal Soulmate')"></button></div>
+			<div class="container"><img alt="/sets\AKU-files\img\58_Ithian Oligarch.png" id="58_Ithian Oligarch" data-flag="@X" onclick="openSidebar('58_Ithian Oligarch',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\104_Hex Trueblight.png" id="104_Hex Trueblight" data-flag="@X" onclick="openSidebar('104_Hex Trueblight',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\150_Mentor of Odajex.png" id="150_Mentor of Odajex" data-flag="@X" onclick="openSidebar('150_Mentor of Odajex',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\181_Ecologoyf.png" id="181_Ecologoyf" data-flag="@X" onclick="openSidebar('181_Ecologoyf',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\25_New Connections.png" id="25_New Connections" data-flag="@X" onclick="openSidebar('25_New Connections',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\62_Massive Dam.png" id="62_Massive Dam" data-flag="@X" onclick="openSidebar('62_Massive Dam',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\105_Host Farm.png" id="105_Host Farm" data-flag="@X" onclick="openSidebar('105_Host Farm',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\155_Panicked Populace.png" id="155_Panicked Populace" data-flag="@X" onclick="openSidebar('155_Panicked Populace',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\187_Gigantomancer.png" id="187_Gigantomancer" data-flag="@X" onclick="openSidebar('187_Gigantomancer',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\33_Routine Maintenance.png" id="33_Routine Maintenance" data-flag="@X" onclick="openSidebar('33_Routine Maintenance',false)"></div>
+			<div class="container"><img data-alt_src="/sets\AKU-files\img\68_Odajex Regent_back.png" alt="/sets\AKU-files\img\68_Odajex Regent_front.png" id="68_Odajex Regent" data-flag="@XD" onclick="openSidebar('68_Odajex Regent',false)"><button class="flip-btn" onclick="imgFlip('68_Odajex Regent')"></button></div>
+			<div class="container"><img alt="/sets\AKU-files\img\112_Percival's Monument.png" id="112_Percivals Monument" data-flag="@X" onclick="openSidebar('112_Percivals Monument',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\156_Parfaitionist.png" id="156_Parfaitionist" data-flag="@X" onclick="openSidebar('156_Parfaitionist',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\190_Godfather of Cement.png" id="190_Godfather of Cement" data-flag="@X" onclick="openSidebar('190_Godfather of Cement',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\34_Saraja's Monument.png" id="34_Sarajas Monument" data-flag="@X" onclick="openSidebar('34_Sarajas Monument',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\73_Picantomancer.png" id="73_Picantomancer" data-flag="@X" onclick="openSidebar('73_Picantomancer',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\113_Percival's Resurrection.png" id="113_Percivals Resurrection" data-flag="@X" onclick="openSidebar('113_Percivals Resurrection',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\157_Phtexaja, Nemesis of Virtue.png" id="157_Phtexaja, Nemesis of Virtue" data-flag="@X" onclick="openSidebar('157_Phtexaja, Nemesis of Virtue',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\202_Natural Hierarchy.png" id="202_Natural Hierarchy" data-flag="@X" onclick="openSidebar('202_Natural Hierarchy',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\38_Societal Collapse.png" id="38_Societal Collapse" data-flag="@X" onclick="openSidebar('38_Societal Collapse',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\83_Toxic Mindset.png" id="83_Toxic Mindset" data-flag="@X" onclick="openSidebar('83_Toxic Mindset',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\117_Profane Rhetoric.png" id="117_Profane Rhetoric" data-flag="@X" onclick="openSidebar('117_Profane Rhetoric',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\166_Tense Atmosphere.png" id="166_Tense Atmosphere" data-flag="@X" onclick="openSidebar('166_Tense Atmosphere',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\209_Shambling Shelter.png" id="209_Shambling Shelter" data-flag="@X" onclick="openSidebar('209_Shambling Shelter',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\44_Urban Sprawl.png" id="44_Urban Sprawl" data-flag="@X" onclick="openSidebar('44_Urban Sprawl',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\49_Deescalate.png" id="49_Deescalate" data-flag="@X" onclick="openSidebar('49_Deescalate',false)"></div>
+			<div class="container"><img data-alt_src="/sets\AKU-files\img\120_Thoughtlich's Phylactery_back.png" alt="/sets\AKU-files\img\120_Thoughtlich's Phylactery_front.png" id="120_Thoughtlichs Phylactery" data-flag="@XD" onclick="openSidebar('120_Thoughtlichs Phylactery',false)"><button class="flip-btn" onclick="imgFlip('120_Thoughtlichs Phylactery')"></button></div>
+			<div class="container"><img data-alt_src="/sets\AKU-files\img\169_Urdonic Tourist_back.png" alt="/sets\AKU-files\img\169_Urdonic Tourist_front.png" id="169_Urdonic Tourist" data-flag="@XD" onclick="openSidebar('169_Urdonic Tourist',false)"><button class="flip-btn" onclick="imgFlip('169_Urdonic Tourist')"></button></div>
+			<div class="container"><img data-alt_src="/sets\AKU-files\img\214_Vassal of Thoughts_back.png" alt="/sets\AKU-files\img\214_Vassal of Thoughts_front.png" id="214_Vassal of Thoughts" data-flag="@XD" onclick="openSidebar('214_Vassal of Thoughts',false)"><button class="flip-btn" onclick="imgFlip('214_Vassal of Thoughts')"></button></div>
+			<div class="container"><img alt="/sets\AKU-files\img\2_Badge of Office.png" id="2_Badge of Office" data-flag="@X" onclick="openSidebar('2_Badge of Office',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\51_Fire Station.png" id="51_Fire Station" data-flag="@X" onclick="openSidebar('51_Fire Station',false)"></div>
+			<div class="container"><img data-alt_src="/sets\AKU-files\img\97_Debt Collector_back.png" alt="/sets\AKU-files\img\97_Debt Collector_front.png" id="97_Debt Collector" data-flag="@XD" onclick="openSidebar('97_Debt Collector',false)"><button class="flip-btn" onclick="imgFlip('97_Debt Collector')"></button></div>
+			<div class="container"><img alt="/sets\AKU-files\img\171_Zealot's Protection.png" id="171_Zealots Protection" data-flag="@X" onclick="openSidebar('171_Zealots Protection',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\175_Callwolf Disobedience.png" id="175_Callwolf Disobedience" data-flag="@X" onclick="openSidebar('175_Callwolf Disobedience',false)"></div>
+			<div class="container"><img data-alt_src="/sets\AKU-files\img\4_Blackhand Jailer_back.png" alt="/sets\AKU-files\img\4_Blackhand Jailer_front.png" id="4_Blackhand Jailer" data-flag="@XD" onclick="openSidebar('4_Blackhand Jailer',false)"><button class="flip-btn" onclick="imgFlip('4_Blackhand Jailer')"></button></div>
+			<div class="container"><img alt="/sets\AKU-files\img\53_Grandfather Clock.png" id="53_Grandfather Clock" data-flag="@X" onclick="openSidebar('53_Grandfather Clock',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\99_Dread Propagandist.png" id="99_Dread Propagandist" data-flag="@X" onclick="openSidebar('99_Dread Propagandist',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\130_Brutal Retaliation.png" id="130_Brutal Retaliation" data-flag="@X" onclick="openSidebar('130_Brutal Retaliation',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\177_Carpenter's Tools.png" id="177_Carpenters Tools" data-flag="@X" onclick="openSidebar('177_Carpenters Tools',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\11_Fastidious Bridge.png" id="11_Fastidious Bridge" data-flag="@X" onclick="openSidebar('11_Fastidious Bridge',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\59_Ithian Outcast.png" id="59_Ithian Outcast" data-flag="@X" onclick="openSidebar('59_Ithian Outcast',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\100_Endless Vassals.png" id="100_Endless Vassals" data-flag="@X" onclick="openSidebar('100_Endless Vassals',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\134_Channel the Call.png" id="134_Channel the Call" data-flag="@X" onclick="openSidebar('134_Channel the Call',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\179_Council Housing.png" id="179_Council Housing" data-flag="@X" onclick="openSidebar('179_Council Housing',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\12_Fight as One.png" id="12_Fight as One" data-flag="@X" onclick="openSidebar('12_Fight as One',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\63_Meandering Stream.png" id="63_Meandering Stream" data-flag="@X" onclick="openSidebar('63_Meandering Stream',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\101_Evacuation Orders.png" id="101_Evacuation Orders" data-flag="@X" onclick="openSidebar('101_Evacuation Orders',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\137_Downtrodden Pavement.png" id="137_Downtrodden Pavement" data-flag="@X" onclick="openSidebar('137_Downtrodden Pavement',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\182_Electoral Victory.png" id="182_Electoral Victory" data-flag="@X" onclick="openSidebar('182_Electoral Victory',false)"></div>
+			<div class="container"><img data-alt_src="/sets\AKU-files\img\13_Funeral Director_back.png" alt="/sets\AKU-files\img\13_Funeral Director_front.png" id="13_Funeral Director" data-flag="@XD" onclick="openSidebar('13_Funeral Director',false)"><button class="flip-btn" onclick="imgFlip('13_Funeral Director')"></button></div>
+			<div class="container"><img alt="/sets\AKU-files\img\64_Model Sculptor.png" id="64_Model Sculptor" data-flag="@X" onclick="openSidebar('64_Model Sculptor',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\103_Hex Anesthetist.png" id="103_Hex Anesthetist" data-flag="@X" onclick="openSidebar('103_Hex Anesthetist',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\138_Errant Ur-Gifted.png" id="138_Errant Ur-Gifted" data-flag="@X" onclick="openSidebar('138_Errant Ur-Gifted',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\183_Ending Earthly Hibernation.png" id="183_Ending Earthly Hibernation" data-flag="@X" onclick="openSidebar('183_Ending Earthly Hibernation',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\14_Godtouched Hex.png" id="14_Godtouched Hex" data-flag="@X" onclick="openSidebar('14_Godtouched Hex',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\67_Odajex Idoliser.png" id="67_Odajex Idoliser" data-flag="@X" onclick="openSidebar('67_Odajex Idoliser',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\114_Percival's Retainers.png" id="114_Percivals Retainers" data-flag="@X" onclick="openSidebar('114_Percivals Retainers',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\139_Fiesty Yearling.png" id="139_Fiesty Yearling" data-flag="@X" onclick="openSidebar('139_Fiesty Yearling',false)"></div>
+			<div class="container"><img data-alt_src="/sets\AKU-files\img\184_Eulogist of Champions_back.png" alt="/sets\AKU-files\img\184_Eulogist of Champions_front.png" id="184_Eulogist of Champions" data-flag="@XD" onclick="openSidebar('184_Eulogist of Champions',false)"><button class="flip-btn" onclick="imgFlip('184_Eulogist of Champions')"></button></div>
+			<div class="container"><img alt="/sets\AKU-files\img\18_Ithian Liberator.png" id="18_Ithian Liberator" data-flag="@X" onclick="openSidebar('18_Ithian Liberator',false)"></div>
+			<div class="container"><img data-alt_src="/sets\AKU-files\img\69_Odajex Thrall_back.png" alt="/sets\AKU-files\img\69_Odajex Thrall_front.png" id="69_Odajex Thrall" data-flag="@XD" onclick="openSidebar('69_Odajex Thrall',false)"><button class="flip-btn" onclick="imgFlip('69_Odajex Thrall')"></button></div>
+			<div class="container"><img alt="/sets\AKU-files\img\115_Percival's Silencer.png" id="115_Percivals Silencer" data-flag="@X" onclick="openSidebar('115_Percivals Silencer',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\140_Foreboding Abode.png" id="140_Foreboding Abode" data-flag="@X" onclick="openSidebar('140_Foreboding Abode',false)"></div>
+			<div class="container"><img data-alt_src="/sets\AKU-files\img\195_Hazenwyld Reclaimer_back.png" alt="/sets\AKU-files\img\195_Hazenwyld Reclaimer_front.png" id="195_Hazenwyld Reclaimer" data-flag="@XD" onclick="openSidebar('195_Hazenwyld Reclaimer',false)"><button class="flip-btn" onclick="imgFlip('195_Hazenwyld Reclaimer')"></button></div>
+			<div class="container"><img alt="/sets\AKU-files\img\21_Library Access.png" id="21_Library Access" data-flag="@X" onclick="openSidebar('21_Library Access',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\75_Poisoned Words.png" id="75_Poisoned Words" data-flag="@X" onclick="openSidebar('75_Poisoned Words',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\118_Smelly Sewers.png" id="118_Smelly Sewers" data-flag="@X" onclick="openSidebar('118_Smelly Sewers',false)"></div>
+			<div class="container"><img data-alt_src="/sets\AKU-files\img\146_Ithian Ransacker_back.png" alt="/sets\AKU-files\img\146_Ithian Ransacker_front.png" id="146_Ithian Ransacker" data-flag="@XD" onclick="openSidebar('146_Ithian Ransacker',false)"><button class="flip-btn" onclick="imgFlip('146_Ithian Ransacker')"></button></div>
+			<div class="container"><img data-alt_src="/sets\AKU-files\img\196_Hazenwyld Tender_back.png" alt="/sets\AKU-files\img\196_Hazenwyld Tender_front.png" id="196_Hazenwyld Tender" data-flag="@XD" onclick="openSidebar('196_Hazenwyld Tender',false)"><button class="flip-btn" onclick="imgFlip('196_Hazenwyld Tender')"></button></div>
+			<div class="container"><img alt="/sets\AKU-files\img\22_Master of Mortar.png" id="22_Master of Mortar" data-flag="@X" onclick="openSidebar('22_Master of Mortar',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\79_Syakir's Attendant.png" id="79_Syakirs Attendant" data-flag="@X" onclick="openSidebar('79_Syakirs Attendant',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\119_Thoughtlich Possession.png" id="119_Thoughtlich Possession" data-flag="@X" onclick="openSidebar('119_Thoughtlich Possession',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\148_Lycanthropic Dispute.png" id="148_Lycanthropic Dispute" data-flag="@X" onclick="openSidebar('148_Lycanthropic Dispute',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\198_Industrialise.png" id="198_Industrialise" data-flag="@X" onclick="openSidebar('198_Industrialise',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\26_Parliament Assembly.png" id="26_Parliament Assembly" data-flag="@X" onclick="openSidebar('26_Parliament Assembly',false)"></div>
+			<div class="container"><img data-alt_src="/sets\AKU-files\img\80_Tainted Bass_back.png" alt="/sets\AKU-files\img\80_Tainted Bass_front.png" id="80_Tainted Bass" data-flag="@XD" onclick="openSidebar('80_Tainted Bass',false)"><button class="flip-btn" onclick="imgFlip('80_Tainted Bass')"></button></div>
+			<div class="container"><img alt="/sets\AKU-files\img\121_Trash Compactor.png" id="121_Trash Compactor" data-flag="@X" onclick="openSidebar('121_Trash Compactor',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\151_Military Barracks.png" id="151_Military Barracks" data-flag="@X" onclick="openSidebar('151_Military Barracks',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\201_Monastery Ambassador.png" id="201_Monastery Ambassador" data-flag="@X" onclick="openSidebar('201_Monastery Ambassador',false)"></div>
+			<div class="container"><img data-alt_src="/sets\AKU-files\img\28_Percithan Farmhand_back.png" alt="/sets\AKU-files\img\28_Percithan Farmhand_front.png" id="28_Percithan Farmhand" data-flag="@XD" onclick="openSidebar('28_Percithan Farmhand',false)"><button class="flip-btn" onclick="imgFlip('28_Percithan Farmhand')"></button></div>
+			<div class="container"><img alt="/sets\AKU-files\img\82_Tourist Attraction.png" id="82_Tourist Attraction" data-flag="@X" onclick="openSidebar('82_Tourist Attraction',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\122_Unsafe Workplace.png" id="122_Unsafe Workplace" data-flag="@X" onclick="openSidebar('122_Unsafe Workplace',false)"></div>
+			<div class="container"><img data-alt_src="/sets\AKU-files\img\153_Odajex Explorer_back.png" alt="/sets\AKU-files\img\153_Odajex Explorer_front.png" id="153_Odajex Explorer" data-flag="@XD" onclick="openSidebar('153_Odajex Explorer',false)"><button class="flip-btn" onclick="imgFlip('153_Odajex Explorer')"></button></div>
+			<div class="container"><img alt="/sets\AKU-files\img\204_Percithan Lifecrafter.png" id="204_Percithan Lifecrafter" data-flag="@X" onclick="openSidebar('204_Percithan Lifecrafter',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\30_Platinum's Proclamation.png" id="30_Platinums Proclamation" data-flag="@X" onclick="openSidebar('30_Platinums Proclamation',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\86_Will of the People.png" id="86_Will of the People" data-flag="@X" onclick="openSidebar('86_Will of the People',false)"></div>
+			<div class="container"><img data-alt_src="/sets\AKU-files\img\126_Vratan Spymaster_back.png" alt="/sets\AKU-files\img\126_Vratan Spymaster_front.png" id="126_Vratan Spymaster" data-flag="@XD" onclick="openSidebar('126_Vratan Spymaster',false)"><button class="flip-btn" onclick="imgFlip('126_Vratan Spymaster')"></button></div>
+			<div class="container"><img alt="/sets\AKU-files\img\154_Omnisonder's Flow.png" id="154_Omnisonders Flow" data-flag="@X" onclick="openSidebar('154_Omnisonders Flow',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\205_Police Officer.png" id="205_Police Officer" data-flag="@X" onclick="openSidebar('205_Police Officer',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\32_Postal Courier.png" id="32_Postal Courier" data-flag="@X" onclick="openSidebar('32_Postal Courier',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\46_Aspect of Innovation.png" id="46_Aspect of Innovation" data-flag="@X" onclick="openSidebar('46_Aspect of Innovation',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\127_Vratan War-Artist.png" id="127_Vratan War-Artist" data-flag="@X" onclick="openSidebar('127_Vratan War-Artist',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\162_Seething Forge.png" id="162_Seething Forge" data-flag="@X" onclick="openSidebar('162_Seething Forge',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\207_Sarajex Meekblade.png" id="207_Sarajex Meekblade" data-flag="@X" onclick="openSidebar('207_Sarajex Meekblade',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\35_Sarajex Veteran.png" id="35_Sarajex Veteran" data-flag="@X" onclick="openSidebar('35_Sarajex Veteran',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\47_Cephalopticon.png" id="47_Cephalopticon" data-flag="@X" onclick="openSidebar('47_Cephalopticon',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\88_Aspect of Poverty.png" id="88_Aspect of Poverty" data-flag="@X" onclick="openSidebar('88_Aspect of Poverty',false)"></div>
+			<div class="container"><img data-alt_src="/sets\AKU-files\img\163_Sired Innocent_back.png" alt="/sets\AKU-files\img\163_Sired Innocent_front.png" id="163_Sired Innocent" data-flag="@XD" onclick="openSidebar('163_Sired Innocent',false)"><button class="flip-btn" onclick="imgFlip('163_Sired Innocent')"></button></div>
+			<div class="container"><img alt="/sets\AKU-files\img\210_Timeless Ancient.png" id="210_Timeless Ancient" data-flag="@X" onclick="openSidebar('210_Timeless Ancient',false)"></div>
+			<div class="container"><img data-alt_src="/sets\AKU-files\img\40_Steelskin Engineer_back.png" alt="/sets\AKU-files\img\40_Steelskin Engineer_front.png" id="40_Steelskin Engineer" data-flag="@XD" onclick="openSidebar('40_Steelskin Engineer',false)"><button class="flip-btn" onclick="imgFlip('40_Steelskin Engineer')"></button></div>
+			<div class="container"><img alt="/sets\AKU-files\img\48_Chilling Effect.png" id="48_Chilling Effect" data-flag="@X" onclick="openSidebar('48_Chilling Effect',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\89_Bastion of Morality.png" id="89_Bastion of Morality" data-flag="@X" onclick="openSidebar('89_Bastion of Morality',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\129_Aspect of Commerce.png" id="129_Aspect of Commerce" data-flag="@X" onclick="openSidebar('129_Aspect of Commerce',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\212_Unsleeping City.png" id="212_Unsleeping City" data-flag="@X" onclick="openSidebar('212_Unsleeping City',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\42_Transcend Umwelts.png" id="42_Transcend Umwelts" data-flag="@X" onclick="openSidebar('42_Transcend Umwelts',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\52_Grammar School.png" id="52_Grammar School" data-flag="@X" onclick="openSidebar('52_Grammar School',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\91_Blighted Feast.png" id="91_Blighted Feast" data-flag="@X" onclick="openSidebar('91_Blighted Feast',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\132_Call Thunder.png" id="132_Call Thunder" data-flag="@X" onclick="openSidebar('132_Call Thunder',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\174_Aspect of Harmony.png" id="174_Aspect of Harmony" data-flag="@X" onclick="openSidebar('174_Aspect of Harmony',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\1_Aspect of Community.png" id="1_Aspect of Community" data-flag="@X" onclick="openSidebar('1_Aspect of Community',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\54_Hand of Percival.png" id="54_Hand of Percival" data-flag="@X" onclick="openSidebar('54_Hand of Percival',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\92_Bones to Bricks.png" id="92_Bones to Bricks" data-flag="@X" onclick="openSidebar('92_Bones to Bricks',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\133_Care Worker.png" id="133_Care Worker" data-flag="@X" onclick="openSidebar('133_Care Worker',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\178_City-Razer.png" id="178_City-Razer" data-flag="@X" onclick="openSidebar('178_City-Razer',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\3_Benevolent Farmhand.png" id="3_Benevolent Farmhand" data-flag="@X" onclick="openSidebar('3_Benevolent Farmhand',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\55_Highlands Warden.png" id="55_Highlands Warden" data-flag="@X" onclick="openSidebar('55_Highlands Warden',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\93_Collect Tax.png" id="93_Collect Tax" data-flag="@X" onclick="openSidebar('93_Collect Tax',false)"></div>
+			<div class="container"><img data-alt_src="/sets\AKU-files\img\136_Dominated Vassal_back.png" alt="/sets\AKU-files\img\136_Dominated Vassal_front.png" id="136_Dominated Vassal" data-flag="@XD" onclick="openSidebar('136_Dominated Vassal',false)"><button class="flip-btn" onclick="imgFlip('136_Dominated Vassal')"></button></div>
+			<div class="container"><img alt="/sets\AKU-files\img\180_Disgraced Urdon.png" id="180_Disgraced Urdon" data-flag="@X" onclick="openSidebar('180_Disgraced Urdon',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\5_Canal Skater.png" id="5_Canal Skater" data-flag="@X" onclick="openSidebar('5_Canal Skater',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\57_Ithian Clairvoyant.png" id="57_Ithian Clairvoyant" data-flag="@X" onclick="openSidebar('57_Ithian Clairvoyant',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\94_Consume Host.png" id="94_Consume Host" data-flag="@X" onclick="openSidebar('94_Consume Host',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\141_Gigantoform Protector.png" id="141_Gigantoform Protector" data-flag="@X" onclick="openSidebar('141_Gigantoform Protector',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\186_Giant Growth.png" id="186_Giant Growth" data-flag="@X" onclick="openSidebar('186_Giant Growth',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\6_Den Builder.png" id="6_Den Builder" data-flag="@X" onclick="openSidebar('6_Den Builder',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\60_Ithian Reaver.png" id="60_Ithian Reaver" data-flag="@X" onclick="openSidebar('60_Ithian Reaver',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\95_Crowd of Hooligans.png" id="95_Crowd of Hooligans" data-flag="@X" onclick="openSidebar('95_Crowd of Hooligans',false)"></div>
+			<div class="container"><img data-alt_src="/sets\AKU-files\img\142_Highlands Retriver_back.png" alt="/sets\AKU-files\img\142_Highlands Retriver_front.png" id="142_Highlands Retriver" data-flag="@XD" onclick="openSidebar('142_Highlands Retriver',false)"><button class="flip-btn" onclick="imgFlip('142_Highlands Retriver')"></button></div>
+			<div class="container"><img alt="/sets\AKU-files\img\188_Gigant's Favor.png" id="188_Gigants Favor" data-flag="@X" onclick="openSidebar('188_Gigants Favor',false)"></div>
+			<div class="container"><img data-alt_src="/sets\AKU-files\img\8_Dusk Sentinel_back.png" alt="/sets\AKU-files\img\8_Dusk Sentinel_front.png" id="8_Dusk Sentinel" data-flag="@XD" onclick="openSidebar('8_Dusk Sentinel',false)"><button class="flip-btn" onclick="imgFlip('8_Dusk Sentinel')"></button></div>
+			<div class="container"><img alt="/sets\AKU-files\img\65_Narcoleptic Transformation.png" id="65_Narcoleptic Transformation" data-flag="@X" onclick="openSidebar('65_Narcoleptic Transformation',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\96_Dead Weight.png" id="96_Dead Weight" data-flag="@X" onclick="openSidebar('96_Dead Weight',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\143_Imposing Gateway.png" id="143_Imposing Gateway" data-flag="@X" onclick="openSidebar('143_Imposing Gateway',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\189_Gigant's Wrath.png" id="189_Gigants Wrath" data-flag="@X" onclick="openSidebar('189_Gigants Wrath',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\15_Hold Accountable.png" id="15_Hold Accountable" data-flag="@X" onclick="openSidebar('15_Hold Accountable',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\66_Odajex Artificer.png" id="66_Odajex Artificer" data-flag="@X" onclick="openSidebar('66_Odajex Artificer',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\98_Donation Taker.png" id="98_Donation Taker" data-flag="@X" onclick="openSidebar('98_Donation Taker',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\145_Infectious Strike.png" id="145_Infectious Strike" data-flag="@X" onclick="openSidebar('145_Infectious Strike',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\191_Grassclade Defender.png" id="191_Grassclade Defender" data-flag="@X" onclick="openSidebar('191_Grassclade Defender',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\16_Impervious Walls.png" id="16_Impervious Walls" data-flag="@X" onclick="openSidebar('16_Impervious Walls',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\71_Percival's Strategist.png" id="71_Percivals Strategist" data-flag="@X" onclick="openSidebar('71_Percivals Strategist',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\106_Host Farm Entertainer.png" id="106_Host Farm Entertainer" data-flag="@X" onclick="openSidebar('106_Host Farm Entertainer',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\149_Market Stall.png" id="149_Market Stall" data-flag="@X" onclick="openSidebar('149_Market Stall',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\192_Hamletback Turtle.png" id="192_Hamletback Turtle" data-flag="@X" onclick="openSidebar('192_Hamletback Turtle',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\17_Imprisonment.png" id="17_Imprisonment" data-flag="@X" onclick="openSidebar('17_Imprisonment',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\72_Pernicious Scheme.png" id="72_Pernicious Scheme" data-flag="@X" onclick="openSidebar('72_Pernicious Scheme',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\107_Host Farm Escapee.png" id="107_Host Farm Escapee" data-flag="@X" onclick="openSidebar('107_Host Farm Escapee',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\152_Odajex Beastmaster.png" id="152_Odajex Beastmaster" data-flag="@X" onclick="openSidebar('152_Odajex Beastmaster',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\193_Hazenwyld Envoy.png" id="193_Hazenwyld Envoy" data-flag="@X" onclick="openSidebar('193_Hazenwyld Envoy',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\19_Ithian Sentry.png" id="19_Ithian Sentry" data-flag="@X" onclick="openSidebar('19_Ithian Sentry',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\74_Planning Permission.png" id="74_Planning Permission" data-flag="@X" onclick="openSidebar('74_Planning Permission',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\108_Host Farm Shepherd.png" id="108_Host Farm Shepherd" data-flag="@X" onclick="openSidebar('108_Host Farm Shepherd',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\158_Raging Recruiter.png" id="158_Raging Recruiter" data-flag="@X" onclick="openSidebar('158_Raging Recruiter',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\194_Hazenwyld Godbeast.png" id="194_Hazenwyld Godbeast" data-flag="@X" onclick="openSidebar('194_Hazenwyld Godbeast',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\20_Ithian Snowstorm.png" id="20_Ithian Snowstorm" data-flag="@X" onclick="openSidebar('20_Ithian Snowstorm',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\76_Ponder the Omnisonder.png" id="76_Ponder the Omnisonder" data-flag="@X" onclick="openSidebar('76_Ponder the Omnisonder',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\109_Intensive Labor.png" id="109_Intensive Labor" data-flag="@X" onclick="openSidebar('109_Intensive Labor',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\159_Rapid Construction.png" id="159_Rapid Construction" data-flag="@X" onclick="openSidebar('159_Rapid Construction',false)"></div>
+			<div class="container"><img data-alt_src="/sets\AKU-files\img\197_Highway Hitchhiker_back.png" alt="/sets\AKU-files\img\197_Highway Hitchhiker_front.png" id="197_Highway Hitchhiker" data-flag="@XD" onclick="openSidebar('197_Highway Hitchhiker',false)"><button class="flip-btn" onclick="imgFlip('197_Highway Hitchhiker')"></button></div>
+			<div class="container"><img alt="/sets\AKU-files\img\23_Mother of Notions.png" id="23_Mother of Notions" data-flag="@X" onclick="openSidebar('23_Mother of Notions',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\77_Skyhigh Scaffolds.png" id="77_Skyhigh Scaffolds" data-flag="@X" onclick="openSidebar('77_Skyhigh Scaffolds',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\110_Old Guard Fanatic.png" id="110_Old Guard Fanatic" data-flag="@X" onclick="openSidebar('110_Old Guard Fanatic',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\160_Rowdy Protest.png" id="160_Rowdy Protest" data-flag="@X" onclick="openSidebar('160_Rowdy Protest',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\199_Integrate into Society.png" id="199_Integrate into Society" data-flag="@X" onclick="openSidebar('199_Integrate into Society',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\24_Nature Reserve.png" id="24_Nature Reserve" data-flag="@X" onclick="openSidebar('24_Nature Reserve',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\78_Soften.png" id="78_Soften" data-flag="@X" onclick="openSidebar('78_Soften',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\116_Percival's Vanguard.png" id="116_Percivals Vanguard" data-flag="@X" onclick="openSidebar('116_Percivals Vanguard',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\164_Spawn of Svakarataja.png" id="164_Spawn of Svakarataja" data-flag="@X" onclick="openSidebar('164_Spawn of Svakarataja',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\200_Into the Crowd.png" id="200_Into the Crowd" data-flag="@X" onclick="openSidebar('200_Into the Crowd',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\27_Passive-Aggressive Door.png" id="27_Passive-Aggressive Door" data-flag="@X" onclick="openSidebar('27_Passive-Aggressive Door',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\81_Take Back Control.png" id="81_Take Back Control" data-flag="@X" onclick="openSidebar('81_Take Back Control',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\123_Veteran's Loathing.png" id="123_Veterans Loathing" data-flag="@X" onclick="openSidebar('123_Veterans Loathing',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\165_Stressed Supports.png" id="165_Stressed Supports" data-flag="@X" onclick="openSidebar('165_Stressed Supports',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\203_Newborn Home.png" id="203_Newborn Home" data-flag="@X" onclick="openSidebar('203_Newborn Home',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\29_Pious Coinscale.png" id="29_Pious Coinscale" data-flag="@X" onclick="openSidebar('29_Pious Coinscale',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\84_Vratan Explorer.png" id="84_Vratan Explorer" data-flag="@X" onclick="openSidebar('84_Vratan Explorer',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\124_Vratan Dockhand.png" id="124_Vratan Dockhand" data-flag="@X" onclick="openSidebar('124_Vratan Dockhand',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\167_Thoughtglass Amulet.png" id="167_Thoughtglass Amulet" data-flag="@X" onclick="openSidebar('167_Thoughtglass Amulet',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\206_Sarajex Emissary.png" id="206_Sarajex Emissary" data-flag="@X" onclick="openSidebar('206_Sarajex Emissary',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\37_Shining Hospital.png" id="37_Shining Hospital" data-flag="@X" onclick="openSidebar('37_Shining Hospital',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\85_Vratan Portraitist.png" id="85_Vratan Portraitist" data-flag="@X" onclick="openSidebar('85_Vratan Portraitist',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\125_Vratan Philanthropist.png" id="125_Vratan Philanthropist" data-flag="@X" onclick="openSidebar('125_Vratan Philanthropist',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\168_Toddler Tantrum.png" id="168_Toddler Tantrum" data-flag="@X" onclick="openSidebar('168_Toddler Tantrum',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\208_Scrounging Thallid.png" id="208_Scrounging Thallid" data-flag="@X" onclick="openSidebar('208_Scrounging Thallid',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\39_Spireline Warden.png" id="39_Spireline Warden" data-flag="@X" onclick="openSidebar('39_Spireline Warden',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\128_War Memorial.png" id="128_War Memorial" data-flag="@X" onclick="openSidebar('128_War Memorial',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\170_Wrangle.png" id="170_Wrangle" data-flag="@X" onclick="openSidebar('170_Wrangle',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\211_Town Hall.png" id="211_Town Hall" data-flag="@X" onclick="openSidebar('211_Town Hall',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\41_Thought Leader.png" id="41_Thought Leader" data-flag="@X" onclick="openSidebar('41_Thought Leader',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\213_Urban Development.png" id="213_Urban Development" data-flag="@X" onclick="openSidebar('213_Urban Development',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\43_Trueblight Slayer.png" id="43_Trueblight Slayer" data-flag="@X" onclick="openSidebar('43_Trueblight Slayer',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\215_Vratan Settlers.png" id="215_Vratan Settlers" data-flag="@X" onclick="openSidebar('215_Vratan Settlers',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\45_Worldsense.png" id="45_Worldsense" data-flag="@X" onclick="openSidebar('45_Worldsense',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\243_Shattered Identity.png" id="243_Shattered Identity" data-flag="@X" onclick="openSidebar('243_Shattered Identity',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\232_Karaja Hetegex.png" id="232_Karaja Hetegex" data-flag="@X" onclick="openSidebar('232_Karaja Hetegex',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\224_Civil War.png" id="224_Civil War" data-flag="@X" onclick="openSidebar('224_Civil War',false)"></div>
+			<div class="container"><img data-alt_src="/sets\AKU-files\img\221_Arlinn, Soulbonded_back.png" alt="/sets\AKU-files\img\221_Arlinn, Soulbonded_front.png" id="221_Arlinn, Soulbonded" data-flag="@XD" onclick="openSidebar('221_Arlinn, Soulbonded',false)"><button class="flip-btn" onclick="imgFlip('221_Arlinn, Soulbonded')"></button></div>
+			<div class="container"><img data-alt_src="/sets\AKU-files\img\237_Platinum, Heir to Cities_back.png" alt="/sets\AKU-files\img\237_Platinum, Heir to Cities_front.png" id="237_Platinum, Heir to Cities" data-flag="@XD" onclick="openSidebar('237_Platinum, Heir to Cities',false)"><button class="flip-btn" onclick="imgFlip('237_Platinum, Heir to Cities')"></button></div>
+			<div class="container"><img alt="/sets\AKU-files\img\246_Ullrgethin, Syakir of Ith.png" id="246_Ullrgethin, Syakir of Ith" data-flag="@X" onclick="openSidebar('246_Ullrgethin, Syakir of Ith',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\216_Agnes, Royal Tutor.png" id="216_Agnes, Royal Tutor" data-flag="@X" onclick="openSidebar('216_Agnes, Royal Tutor',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\235_Novablast, Urdonic Queen.png" id="235_Novablast, Urdonic Queen" data-flag="@X" onclick="openSidebar('235_Novablast, Urdonic Queen',false)"></div>
+			<div class="container"><img data-alt_src="/sets\AKU-files\img\227_Gristle, Callwolf Attendant_back.png" alt="/sets\AKU-files\img\227_Gristle, Callwolf Attendant_front.png" id="227_Gristle, Callwolf Attendant" data-flag="@XD" onclick="openSidebar('227_Gristle, Callwolf Attendant',false)"><button class="flip-btn" onclick="imgFlip('227_Gristle, Callwolf Attendant')"></button></div>
+			<div class="container"><img alt="/sets\AKU-files\img\228_Halaja of the Embraced.png" id="228_Halaja of the Embraced" data-flag="@X" onclick="openSidebar('228_Halaja of the Embraced',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\230_Ithian Emissaries.png" id="230_Ithian Emissaries" data-flag="@X" onclick="openSidebar('230_Ithian Emissaries',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\218_Akellan Uprising.png" id="218_Akellan Uprising" data-flag="@X" onclick="openSidebar('218_Akellan Uprising',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\247_Urdonic Tithe Taker.png" id="247_Urdonic Tithe Taker" data-flag="@X" onclick="openSidebar('247_Urdonic Tithe Taker',false)"></div>
+			<div class="container"><img data-alt_src="/sets\AKU-files\img\223_Callwolf Champion_back.png" alt="/sets\AKU-files\img\223_Callwolf Champion_front.png" id="223_Callwolf Champion" data-flag="@XD" onclick="openSidebar('223_Callwolf Champion',false)"><button class="flip-btn" onclick="imgFlip('223_Callwolf Champion')"></button></div>
+			<div class="container"><img alt="/sets\AKU-files\img\245_Species Representative.png" id="245_Species Representative" data-flag="@X" onclick="openSidebar('245_Species Representative',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\240_Radicalised Revenant.png" id="240_Radicalised Revenant" data-flag="@X" onclick="openSidebar('240_Radicalised Revenant',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\241_Scion of the Call.png" id="241_Scion of the Call" data-flag="@X" onclick="openSidebar('241_Scion of the Call',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\217_Akaaja, Steel Chancellor.png" id="217_Akaaja, Steel Chancellor" data-flag="@X" onclick="openSidebar('217_Akaaja, Steel Chancellor',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\229_Hasaaja, Voice of Odajex.png" id="229_Hasaaja, Voice of Odajex" data-flag="@X" onclick="openSidebar('229_Hasaaja, Voice of Odajex',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\226_Dread Tyrant Algaja.png" id="226_Dread Tyrant Algaja" data-flag="@X" onclick="openSidebar('226_Dread Tyrant Algaja',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\225_Differences Reconciled.png" id="225_Differences Reconciled" data-flag="@X" onclick="openSidebar('225_Differences Reconciled',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\220_The Argent Court.png" id="220_The Argent Court" data-flag="@X" onclick="openSidebar('220_The Argent Court',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\219_Ambassador of Svakarataja.png" id="219_Ambassador of Svakarataja" data-flag="@X" onclick="openSidebar('219_Ambassador of Svakarataja',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\222_Bisapient Rift.png" id="222_Bisapient Rift" data-flag="@X" onclick="openSidebar('222_Bisapient Rift',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\238_Property Auctioneer.png" id="238_Property Auctioneer" data-flag="@X" onclick="openSidebar('238_Property Auctioneer',false)"></div>
+			<div class="container"><img data-alt_src="/sets\AKU-files\img\231_Jessica, War Veteran_back.png" alt="/sets\AKU-files\img\231_Jessica, War Veteran_front.png" id="231_Jessica, War Veteran" data-flag="@XD" onclick="openSidebar('231_Jessica, War Veteran',false)"><button class="flip-btn" onclick="imgFlip('231_Jessica, War Veteran')"></button></div>
+			<div class="container"><img alt="/sets\AKU-files\img\242_Settlement's Birth.png" id="242_Settlements Birth" data-flag="@X" onclick="openSidebar('242_Settlements Birth',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\234_Lycanopractor.png" id="234_Lycanopractor" data-flag="@X" onclick="openSidebar('234_Lycanopractor',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img data-alt_src="/sets\AKU-files\img\244_Shield of Saraja_back.png" alt="/sets\AKU-files\img\244_Shield of Saraja_front.png" id="244_Shield of Saraja" data-flag="@XD" onclick="openSidebar('244_Shield of Saraja',false)"><button class="flip-btn" onclick="imgFlip('244_Shield of Saraja')"></button></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\233_Lord Herongrand.png" id="233_Lord Herongrand" data-flag="@X" onclick="openSidebar('233_Lord Herongrand',false)"></div>
+			<div class="container"><img data-alt_src="/sets\AKU-files\img\239_Rade, Tempest Vassal_back.png" alt="/sets\AKU-files\img\239_Rade, Tempest Vassal_front.png" id="239_Rade, Tempest Vassal" data-flag="@XD" onclick="openSidebar('239_Rade, Tempest Vassal',false)"><button class="flip-btn" onclick="imgFlip('239_Rade, Tempest Vassal')"></button></div>
+			<div class="container"><img alt="/sets\AKU-files\img\236_Percithan Mediator.png" id="236_Percithan Mediator" data-flag="@X" onclick="openSidebar('236_Percithan Mediator',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\259_Svakarataja, Hex Metropolis.png" id="259_Svakarataja, Hex Metropolis" data-flag="@X" onclick="openSidebar('259_Svakarataja, Hex Metropolis',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\253_Karaja's Spark Hoard.png" id="253_Karajas Spark Hoard" data-flag="@X" onclick="openSidebar('253_Karajas Spark Hoard',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\249_Cargo Train.png" id="249_Cargo Train" data-flag="@X" onclick="openSidebar('249_Cargo Train',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\250_Channelling Amulet.png" id="250_Channelling Amulet" data-flag="@X" onclick="openSidebar('250_Channelling Amulet',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\254_Marketplace Guide.png" id="254_Marketplace Guide" data-flag="@X" onclick="openSidebar('254_Marketplace Guide',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\255_Monastery Librarians.png" id="255_Monastery Librarians" data-flag="@X" onclick="openSidebar('255_Monastery Librarians',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\257_Pithing Needle.png" id="257_Pithing Needle" data-flag="@X" onclick="openSidebar('257_Pithing Needle',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\248_Bleak Jail.png" id="248_Bleak Jail" data-flag="@X" onclick="openSidebar('248_Bleak Jail',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\251_Crumbling Crib.png" id="251_Crumbling Crib" data-flag="@X" onclick="openSidebar('251_Crumbling Crib',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\252_Emergency Club.png" id="252_Emergency Club" data-flag="@X" onclick="openSidebar('252_Emergency Club',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\256_Monastery Warden.png" id="256_Monastery Warden" data-flag="@X" onclick="openSidebar('256_Monastery Warden',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\258_Roadside Tavern.png" id="258_Roadside Tavern" data-flag="@X" onclick="openSidebar('258_Roadside Tavern',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\265_Ithian Embassy.png" id="265_Ithian Embassy" data-flag="@X" onclick="openSidebar('265_Ithian Embassy',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\272_Vrataport Embassy.png" id="272_Vrataport Embassy" data-flag="@X" onclick="openSidebar('272_Vrataport Embassy',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\271_Urdonic Embassy.png" id="271_Urdonic Embassy" data-flag="@X" onclick="openSidebar('271_Urdonic Embassy',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\262_Hazenwyld Embassy.png" id="262_Hazenwyld Embassy" data-flag="@X" onclick="openSidebar('262_Hazenwyld Embassy',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\261_Embraced Embassy.png" id="261_Embraced Embassy" data-flag="@X" onclick="openSidebar('261_Embraced Embassy',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\270_Svakaratajex Embassy.png" id="270_Svakaratajex Embassy" data-flag="@X" onclick="openSidebar('270_Svakaratajex Embassy',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\266_Odajex Embassy.png" id="266_Odajex Embassy" data-flag="@X" onclick="openSidebar('266_Odajex Embassy',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\263_Herongrand's Embassy.png" id="263_Herongrands Embassy" data-flag="@X" onclick="openSidebar('263_Herongrands Embassy',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\264_Insomnian Embassy.png" id="264_Insomnian Embassy" data-flag="@X" onclick="openSidebar('264_Insomnian Embassy',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\267_Percithan Embassy.png" id="267_Percithan Embassy" data-flag="@X" onclick="openSidebar('267_Percithan Embassy',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\277_Forest.png" id="277_Forest" data-flag="@X" onclick="openSidebar('277_Forest',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\273_Plains.png" id="273_Plains" data-flag="@X" onclick="openSidebar('273_Plains',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\274_Island.png" id="274_Island" data-flag="@X" onclick="openSidebar('274_Island',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\276_Mountain.png" id="276_Mountain" data-flag="@X" onclick="openSidebar('276_Mountain',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\275_Swamp.png" id="275_Swamp" data-flag="@X" onclick="openSidebar('275_Swamp',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\8t_Construct.png" id="8t_Construct" data-flag="@X" onclick="openSidebar('8t_Construct',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\9t_Fire Engine.png" id="9t_Fire Engine" data-flag="@X" onclick="openSidebar('9t_Fire Engine',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\10t_Food.png" id="10t_Food" data-flag="@X" onclick="openSidebar('10t_Food',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\11t_Glyph.png" id="11t_Glyph" data-flag="@X" onclick="openSidebar('11t_Glyph',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\12t_Segment.png" id="12t_Segment" data-flag="@X" onclick="openSidebar('12t_Segment',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\13t_Treasure.png" id="13t_Treasure" data-flag="@X" onclick="openSidebar('13t_Treasure',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\1t_Citizen.png" id="1t_Citizen" data-flag="@X" onclick="openSidebar('1t_Citizen',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\2t_Werewolf.png" id="2t_Werewolf" data-flag="@X" onclick="openSidebar('2t_Werewolf',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\3t_Embraced Representative.png" id="3t_Embraced Representative" data-flag="@X" onclick="openSidebar('3t_Embraced Representative',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\4t_Dragon.png" id="4t_Dragon" data-flag="@X" onclick="openSidebar('4t_Dragon',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\5t_Human.png" id="5t_Human" data-flag="@X" onclick="openSidebar('5t_Human',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\6t_Incarnation.png" id="6t_Incarnation" data-flag="@X" onclick="openSidebar('6t_Incarnation',false)"></div>
+			<div class="container"><img alt="/sets\AKU-files\img\7t_Worker.png" id="7t_Worker" data-flag="@X" onclick="openSidebar('7t_Worker',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+	</div>
+</div>
+	<div class="sidebar" id="sidebar">
+		<div class="sidebar-container">
+			<img id="sidebar_img" class="sidebar-img" src="/img/er.png">
+			<img id="sidebar_h_img" class="sidebar-h-img">
+			<button class="flip-btn" id="sidebar-flip-btn" onclick="imgFlip('sidebar_img')"></button>
+		</div>
+		<button class="close-btn" onclick="closeSidebar()"></button>
+	</div>
+	<div class="footer"></div>
+
+	<script>
+	const delay = ms => new Promise(res => setTimeout(res, ms));
+		let specialchars = "";
+
+	document.addEventListener('DOMContentLoaded', async function() {
+		await fetch('/lists/all-cards.json')
+					.then(response => response.json())
+					.then(json => {
+						card_list = json;
+				}).catch(error => console.error('Error:', error));
+
+				await fetch('/resources/replacechars.txt')
+					.then(response => response.text())
+					.then(text => {
+						specialchars = text; 
+				}).catch(error => console.error('Error:', error));
+
+				card_list_arrayified = card_list.cards;
+
+		preloadImgs = document.getElementsByClassName('preload-hidden');
+		
+		let images_loaded = [];
+
+		do {
+			await delay(100);
+			images_loaded = []
+			for (const img of preloadImgs)
+			{
+				images_loaded.push(isImageOk(img));
+			}
+		}
+		while (images_loaded.includes(false));
+
+		
+		loadImages();
+	});
+
+	function isImageOk(img) {
+		if (!img.complete || img.naturalWidth == 0) {
+			return false;
+		}
+
+		return true;
+	}
+
+	function loadImages() {
+		const images = document.querySelectorAll('.grid-container img');
+
+		images.forEach(img => {
+			const flag = img.getAttribute('data-flag');
+
+			if (flag === '@N') {
+				img.src = '/img/card_back.png';
+				img.removeAttribute("onclick");
+				img.style.cursor = 'default';
+			}
+			else
+			{
+				img.src = img.alt;
+
+				if (flag === '@E') {
+					img.removeAttribute("onclick");
+					img.style.cursor = 'default';
+				}
+			}
+
+			img.style.visibility = 'visible';
+		});
+	}
+
+	window.addEventListener('resize', function(event) {
+		setSidebarTop();
+	}, true);
+
+	function setSidebarTop() {
+		let vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+		let sh = document.getElementById('sidebar').offsetHeight;
+		let height = 100 * ((vh - sh) / 2) / vh;
+		document.getElementById('sidebar').style.top = height + '%';
+	}
+
+	let horizontal = false;
+
+	function imgFlip(num) {
+		tmp = document.getElementById(num).src;
+		console.log(num);
+		document.getElementById(num).src = document.getElementById(num).dataset.alt_src;
+		document.getElementById(num).dataset.alt_src = tmp;
+
+		if (num == 'sidebar_img')
+		{
+			const rotated_img = document.getElementById('sidebar_h_img');
+			const sidebar_img = document.getElementById('sidebar_img');
+
+			if (horizontal && rotated_img.style.display == 'none')
+			{
+				rotated_img.style.display = "block";
+				sidebar_img.style.filter = "blur(2px) brightness(0.7)";
+			}
+			else
+			{
+				rotated_img.style.display = "none";
+				sidebar_img.style.filter = "";
+			}
+		}
+	}
+
+	function openSidebar(id, h = false) {
+		horizontal = h;
+		scroll_pct = window.scrollY / document.documentElement.scrollHeight;
+		
+		document.getElementById('sidebar').style.display = 'grid';
+
+		const rotated_img = document.getElementById('sidebar_h_img');
+		const sidebar_img = document.getElementById('sidebar_img');
+
+		sidebar_img.src = document.getElementById(id).src;
+		rotated_img.src = document.getElementById(id).src.replace("_back", "_front");
+
+		if (horizontal && !sidebar_img.src.includes("_back"))
+		{
+			rotated_img.style.display = "block";
+			sidebar_img.style.filter = "blur(2px) brightness(0.7)";
+		}
+		else
+		{
+			rotated_img.style.display = "none";
+			sidebar_img.style.filter = "";
+		}
+
+		if (document.getElementById(id).dataset.alt_src)
+		{
+			document.getElementById('sidebar_img').dataset.alt_src = document.getElementById(id).dataset.alt_src;
+			document.getElementById('sidebar-flip-btn').style.display = 'block';
+		}
+		else
+		{
+			delete document.getElementById('sidebar_img').dataset.alt_src;
+			document.getElementById('sidebar-flip-btn').style.display = 'none';
+		}
+		document.getElementById('main-content').style.width = '60%';
+		
+		scroll_pos = scroll_pct * document.documentElement.scrollHeight;
+		window.scrollTo(window.scrollX, scroll_pos);
+		setSidebarTop();
+	}
+
+	function closeSidebar() {
+		scroll_pct = window.scrollY / document.documentElement.scrollHeight;
+
+		document.getElementById('sidebar').style.display = 'none';
+		document.getElementById('main-content').style.width = '100%';
+		
+
+		scroll_pos = scroll_pct * document.documentElement.scrollHeight;
+		window.scrollTo(window.scrollX, scroll_pos);
+	}
+
+	document.getElementById("search").addEventListener("keypress", function(event) {
+		if (event.key === "Enter") {
+			event.preventDefault();
+			search();
+		}
+	});
+
+	function search() {
+		const url = new URL('search', window.location.origin);
+		url.searchParams.append('search', document.getElementById("search").value);
+		window.location.href = url;
+	}
+
+		function randomCard() {
+				let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
+				let random_card = card_list_arrayified[i];
+
+				const url = new URL('card', window.location.origin);
+				const params = {
+					set: random_card.set,
+					num: random_card.number,
+					name: random_card.card_name
+				}
+				for (const key in params) {
+					url.searchParams.append(key, params[key]);
+				}
+
+				window.location.href = url;
+			}
+	</script>
+</body>
+</html>
